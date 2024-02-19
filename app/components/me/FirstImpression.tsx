@@ -1,15 +1,15 @@
-import { Button, Group, Stack, Text } from "@mantine/core";
+import { Button, Grid, Group, Stack, Text } from "@mantine/core";
 import React from "react";
 import classes from "../../../public/css/me/FirstImpression.module.css";
 import {
-  IconBrandDeviantart,
   IconBrandGithubFilled,
   IconBrandLinkedin,
+  IconFileInfo,
 } from "@tabler/icons-react";
 
 const FirstImpression = () => {
   return (
-    <Group justify="center" grow>
+    <Grid justify="space-between" align="center"  >
       <Stack align="left">
         <Text c={"yellow"} className={classes.titleDeveloper}>
           Software Developer
@@ -39,7 +39,7 @@ const FirstImpression = () => {
             variant="light"
             color="green"
             radius={"md"}
-            leftSection={<IconBrandDeviantart size={34} />}
+            leftSection={<IconFileInfo size={34} />}
           >
             CV
           </Button>
@@ -48,7 +48,7 @@ const FirstImpression = () => {
       <Stack align="center">
         <img src={"/image/me.jpg"} className={classes.profileImage} alt={""} />
       </Stack>
-    </Group>
+    </Grid>
   );
 };
 

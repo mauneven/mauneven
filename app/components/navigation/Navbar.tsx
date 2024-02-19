@@ -1,4 +1,5 @@
 'use client'
+
 import { Group, Burger, Text } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import classes from '../../../public/css/navigation/HeaderMenu.module.css';

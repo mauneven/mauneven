@@ -10,8 +10,9 @@ export default function ThemeChanger() {
   return (
     <ActionIcon
       onClick={() => setColorScheme(computedColorScheme === 'light' ? 'dark' : 'light')}
-      variant="default"
-      size="xl"
+      variant="light"
+      p={5}
+      size={'lg'}
       aria-label="Toggle color scheme"
     >
       <IconSun className={cx(classes.icon, classes.light)} stroke={1.5} />

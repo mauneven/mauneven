@@ -15,5 +15,5 @@
     height: 400px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
+    border: 5px solid light-dark(rgb(47, 47, 47), rgb(194, 194, 194));
 }
