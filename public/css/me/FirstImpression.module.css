@@ -1,0 +1,19 @@
+.titleDeveloper{
+    font-size: 50px;
+    font-weight: 600;
+    color: light-dark(var(rgb(221, 191, 23)), var(rgb(168, 136, 10)));
+}
+
+.titleName{
+    font-size: 70px;
+    font-weight: 600;
+    color: light-dark(var(rgb(221, 191, 23)), var(rgb(168, 136, 10)));
+}
+
+.profileImage{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
+}
