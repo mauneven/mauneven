@@ -2,6 +2,7 @@ import React from "react";
 import FirstImpression from "./components/me/FirstImpression";
 import Experience from "./components/me/Experience";
 import { Divider, Stack } from "@mantine/core";
+import Projects from "./components/me/Projects";
 
 const page = () => {
   return (
@@ -9,6 +10,8 @@ const page = () => {
       <FirstImpression />
       <Divider mt={50} mb={50}/>
       <Experience />
+      <Divider mt={50} mb={50}/>
+      <Projects/>
     </Stack>
   );
 };
