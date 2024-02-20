@@ -31,7 +31,7 @@ const FirstImpression = () => {
         <Text c={"yellow"} className={classes.titleDeveloper}>
           Software Developer
         </Text>
-        <Group  justify="space-between" wrap="wrap-reverse">
+        <Group justify="space-between" wrap="wrap-reverse">
           <Badge
             size="xl"
             color="green"
@@ -80,11 +80,11 @@ const FirstImpression = () => {
         <img src={"/image/me.jpg"} className={classes.profileImage} alt={""} />
         <Paper shadow="xl" radius="md" p="xl" maw={300} withBorder>
           <Text className={classes.infoText}>
-            Developing software isn't just about coding; it's about
-            understanding the business and environment you're in, to bring
-            solutions to the problems faced by the people within it,{" "}
+            Developing software isn&apos;t just about coding; it&apos;s about
+            understanding the business and environment you&apos;re in, to bring
+            solutions to the problems faced by the people within it, {" "}
             <Text span c="yellow" inherit>
-              creating something people want
+              creating something people want.
             </Text>
           </Text>
         </Paper>

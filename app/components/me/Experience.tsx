@@ -2,11 +2,12 @@
 
 import { Stack, Title, Timeline, Text } from "@mantine/core";
 import React from "react";
+import classes from "../../../public/css/me/FirstImpression.module.css"
 
 const Experience = () => {
   return (
-    <Stack mb={50} justify="center" align="center">
-      <Title mb={20}>Experience</Title>
+    <Stack mb={50} gap={30} justify="center" align="center">
+      <Text c={"yellow"} className={classes.titleDeveloper}>Experience</Text>
       <Timeline active={3} bulletSize={50} lineWidth={4}>
         <Timeline.Item>
           <Title pt={0} mt={0}>
