@@ -1,4 +1,4 @@
-import { Grid, Group, Paper, Title, Text } from "@mantine/core";
+import { Grid, Paper, Title, Text } from "@mantine/core";
 import React from "react";
 
 const Projects = () => {

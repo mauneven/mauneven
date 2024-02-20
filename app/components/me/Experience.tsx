@@ -5,7 +5,7 @@ import React from "react";
 
 const Experience = () => {
   return (
-    <Stack mb={50}>
+    <Stack mb={50} justify="center" align="center">
       <Title mb={20}>Experience</Title>
       <Timeline active={3} bulletSize={50} lineWidth={4}>
         <Timeline.Item>

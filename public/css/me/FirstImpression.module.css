@@ -1,19 +1,29 @@
 .titleDeveloper{
-    font-size: 50px;
-    font-weight: 600;
-    color: light-dark(var(rgb(221, 191, 23)), var(rgb(168, 136, 10)));
+    font-size: 230%;
+    font-weight: 700;
 }
 
 .titleName{
-    font-size: 70px;
+    font-size: 300%;
+    font-weight: 700;
+}
+
+.infoText{
+    font-size: 100%;
     font-weight: 600;
-    color: light-dark(var(rgb(221, 191, 23)), var(rgb(168, 136, 10)));
+}
+
+.icon{
+    size: 500%;
 }
 
 .profileImage{
-    width: 400px;
-    height: 400px;
+    width: calc(10vw + 110px);
+    height: calc(10vw + 110px);
     object-fit: cover;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 5px solid light-dark(rgb(47, 47, 47), rgb(194, 194, 194));
 }
