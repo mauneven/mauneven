@@ -1,9 +1,9 @@
-import { Grid, Paper, Title, Text } from "@mantine/core";
+import { Grid, Paper, Title, Text, Stack } from "@mantine/core";
 import React from "react";
 
 const Projects = () => {
   return (
-    <Grid>
+    <Stack justify="center" align="center">
       <Title>Projects</Title>
       <Grid justify="space-between" align="center">
         <Paper shadow="xl" radius="md" p="xl">
@@ -21,7 +21,7 @@ const Projects = () => {
           </Text>
         </Paper>
       </Grid>
-    </Grid>
+    </Stack>
   );
 };
 

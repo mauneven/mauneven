@@ -1,32 +1,60 @@
-import { Button, Flex, Group, Paper, Stack, Text } from "@mantine/core";
+"use client";
+
+import { Badge, Button, Flex, Group, Paper, Stack, Text } from "@mantine/core";
 import React from "react";
 import classes from "../../../public/css/me/FirstImpression.module.css";
 import {
   IconArrowDown,
   IconBrandGithubFilled,
   IconBrandLinkedin,
+  IconBriefcase,
   IconFileInfo,
+  IconWorldPin,
 } from "@tabler/icons-react";
 
 const FirstImpression = () => {
+  const handleScrollDown = () => {
+    window.scrollTo({
+      top: window.innerHeight * 1,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <Stack
       justify="center"
       align="center"
-      gap={50}
-      style={{ minHeight: "93vh" }}
+      gap={40}
+      style={{ minHeight: "90vh" }}
     >
-      <Stack justify="center" align="center" gap={0}>
-        <Text variant="gradient"
-      gradient={{ from: 'yellow', to: 'orange', deg: 227 }} className={classes.titleDeveloper}>
+      <Stack justify="center" align="center" gap={10}>
+        <Text c={"yellow"} className={classes.titleDeveloper}>
           Software Developer
         </Text>
+        <Group  justify="space-between" wrap="wrap-reverse">
+          <Badge
+            size="xl"
+            color="green"
+            variant="light"
+            leftSection={<IconWorldPin />}
+          >
+            Colombia
+          </Badge>
+          <Badge
+            size="xl"
+            color="orange"
+            variant="light"
+            leftSection={<IconBriefcase />}
+          >
+            Be Bolder
+          </Badge>
+        </Group>
         <Text className={classes.titleName}>Mauricio Pulido</Text>
-        <Group>
+        <Group justify="center" gap={20}>
           <Button
             variant="light"
             radius={"md"}
-            leftSection={<IconBrandLinkedin  />}
+            leftSection={<IconBrandLinkedin />}
           >
             LinkedIn
           </Button>
@@ -34,15 +62,15 @@ const FirstImpression = () => {
             variant="light"
             color="grape"
             radius={"md"}
-            leftSection={<IconBrandGithubFilled  />}
+            leftSection={<IconBrandGithubFilled />}
           >
             GitHub
           </Button>
           <Button
             variant="light"
-            color="green"
+            color="lime"
             radius={"md"}
-            leftSection={<IconFileInfo  />}
+            leftSection={<IconFileInfo />}
           >
             CV
           </Button>
@@ -55,13 +83,13 @@ const FirstImpression = () => {
             Developing software isn't just about coding; it's about
             understanding the business and environment you're in, to bring
             solutions to the problems faced by the people within it,{" "}
-            <Text span c="blue" inherit>
+            <Text span c="yellow" inherit>
               creating something people want
             </Text>
           </Text>
         </Paper>
       </Flex>
-      <Button variant="light" radius={"md"}>
+      <Button variant="light" radius={"md"} onClick={handleScrollDown}>
         <IconArrowDown />
       </Button>
     </Stack>
