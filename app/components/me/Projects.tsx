@@ -6,8 +6,6 @@ import {
   Group,
   Button,
   Badge,
-  SimpleGrid,
-  Grid,
 } from "@mantine/core";
 import React from "react";
 
@@ -42,7 +40,7 @@ const Projects = () => {
 
           <Text size="sm" c="dimmed">
             CASSIE or Code Analysis System for Software Intelligence and
-            Enhancement it's a Generative Pre-Trained Transformer that uses the community GPT-2 with more than 124 Millions of parameters
+            Enhancement it&apos;s a Generative Pre-Trained Transformer that uses the community GPT-2 with more than 124 Millions of parameters
           </Text>
 
           <Button color="blue" fullWidth mt="md" radius="md">
