@@ -14,7 +14,7 @@ import React from "react";
 const Projects = () => {
   return (
     <Stack justify="center" align="center">
-      <Title>Projects</Title>
+      <Title size="h1" c={"yellow"}>Projects</Title>
       <Group maw={1000} justify="center" gap={50}>
         <Card maw={400} shadow="sm" padding="lg" radius="md" withBorder>
           <img />
@@ -46,7 +46,7 @@ const Projects = () => {
           </Text>
 
           <Button color="blue" fullWidth mt="md" radius="md">
-            Book classic tour now
+            info
           </Button>
         </Card>
         <Card maw={400} shadow="sm" padding="lg" radius="md" withBorder>
@@ -63,13 +63,13 @@ const Projects = () => {
           </Text>
 
           <Button color="blue" fullWidth mt="md" radius="md">
-            Book classic tour now
+            info
           </Button>
         </Card>
         <Card maw={400} shadow="sm" padding="lg" radius="md" withBorder>
           <img />
           <Group justify="space-between" mt="md" mb="xs">
-            <Text fw={500}>Atorquideas</Text>
+            <Text fw={500}>MiniMarket</Text>
             <Badge color="green">FINISHED</Badge>
           </Group>
 
@@ -80,7 +80,7 @@ const Projects = () => {
           </Text>
 
           <Button color="blue" fullWidth mt="md" radius="md">
-            Book classic tour now
+            info
           </Button>
         </Card>
       </Group>
