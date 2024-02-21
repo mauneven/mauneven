@@ -20,8 +20,8 @@ const Projects = () => {
       </Title>
       <Group maw={1000} justify="center" gap={50}>
         <Card maw={400} shadow="sm" padding="lg" radius="md" withBorder>
-          <Image src={"/image/want-logo.svg"} />
-          <Group justify="space-between" mt="md" mb="xs">
+          <Image src={"/image/want-logo.svg"} mt={40} mb={40}/>
+          <Group justify="space-between" mt="lg" mb="xs">
             <Text fw={500}>Want</Text>
             <Badge color="violet">In Progress</Badge>
           </Group>
@@ -52,7 +52,7 @@ const Projects = () => {
               AWS
             </Badge>
           </Group>
-          <Spoiler maxHeight={120} showLabel="Show more" hideLabel="Hide">
+          <Spoiler maxHeight={100} showLabel="Show more" hideLabel="Hide">
             <Text size="sm" c="dimmed">
               This project is the most advanced and ambitious endeavor to date.
               Want stands as a groundbreaking platform that redifines online
@@ -84,8 +84,8 @@ const Projects = () => {
           </Button>
         </Card>
         <Card maw={400} shadow="sm" padding="lg" radius="md" withBorder>
-          <img />
-          <Group justify="space-between" mt="md" mb="xs">
+          <Image src={"/image/cassie.png"} radius={10} />
+          <Group justify="space-between" mt="lg" mb="xs">
             <Text fw={500}>CASSIE</Text>
             <Badge color="green">FINISHED</Badge>
           </Group>
@@ -127,22 +127,44 @@ const Projects = () => {
             radius="md"
             leftSection={<IconBoxModel />}
           >
-            CLM (Credits)
+            LLM (Credits: OpenAI)
           </Button>
         </Card>
         <Card maw={400} shadow="sm" padding="lg" radius="md" withBorder>
-          <img />
           <Group justify="space-between" mt="md" mb="xs">
             <Text fw={500}>MiniMarket</Text>
             <Badge color="green">FINISHED</Badge>
           </Group>
-
-          <Text size="sm" c="dimmed">
-            With Fjord Tours you can explore more of the magical fjord
-            landscapes with tours and activities on and around the fjords of
-            Norway
-          </Text>
-
+          <Group mt="md" mb="xs">
+            <Badge variant="light" color="blue">
+              Java
+            </Badge>
+            <Badge variant="light" color="blue">
+              Spring
+            </Badge>
+            <Badge variant="light" color="blue">
+              Netlify
+            </Badge>
+            <Badge variant="light" color="blue">
+              TypeScript
+            </Badge>
+          </Group>
+          <Spoiler maxHeight={170} showLabel="Show more" hideLabel="Hide">
+            <Text size="sm" c="dimmed">
+              The MiniMarket project is a fundamental Java project leveraging
+              the Spring framework and PostgreSQL database. It employs essential
+              mappings and attributes inherent to Spring's functionality. This
+              project serves as an excellent demonstration of core Java
+              principles, Spring's powerful features for dependency injection,
+              aspect-oriented programming, and data access through its
+              integration with PostgreSQL. By utilizing Spring's robust
+              capabilities, developers can efficiently manage dependencies,
+              handle database interactions seamlessly, and ensure code
+              modularity and scalability. Overall, the MiniMarket project
+              provides a solid foundation for understanding and implementing
+              Java-based web applications with Spring framework integration.
+            </Text>
+          </Spoiler>
           <Button color="blue" fullWidth mt="md" radius="md">
             info
           </Button>
