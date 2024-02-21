@@ -36,7 +36,7 @@ const Experience = () => {
           </Text>
         </Timeline.Item>
 
-        <Timeline.Item lineVariant="dotted">
+        <Timeline.Item>
           <Title pt={0} mt={0}>
             Web & Mobile Developer
           </Title>

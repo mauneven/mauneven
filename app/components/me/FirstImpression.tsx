@@ -82,7 +82,7 @@ const FirstImpression = () => {
           <Text className={classes.infoText}>
             Developing software isn&apos;t just about coding; it&apos;s about
             understanding the business and environment you&apos;re in, to bring
-            solutions to the problems faced by the people within it, {" "}
+            solutions to the problems faced by the people within it,{" "}
             <Text span c="yellow" inherit>
               creating something people want.
             </Text>
