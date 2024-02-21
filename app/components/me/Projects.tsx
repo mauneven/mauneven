@@ -20,7 +20,7 @@ const Projects = () => {
       </Title>
       <Group maw={1000} justify="center" gap={50}>
         <Card maw={400} shadow="sm" padding="lg" radius="md" withBorder>
-          <Image src={"/image/want-logo.svg"} mt={40} mb={40}/>
+          <Image src={"/image/want-logo.svg"} mt={40} mb={40} />
           <Group justify="space-between" mt="lg" mb="xs">
             <Text fw={500}>Want</Text>
             <Badge color="violet">In Progress</Badge>
@@ -153,11 +153,11 @@ const Projects = () => {
             <Text size="sm" c="dimmed">
               The MiniMarket project is a fundamental Java project leveraging
               the Spring framework and PostgreSQL database. It employs essential
-              mappings and attributes inherent to Spring's functionality. This
+              mappings and attributes inherent to Spring&apos;s functionality. This
               project serves as an excellent demonstration of core Java
-              principles, Spring's powerful features for dependency injection,
+              principles, Spring&apos;s powerful features for dependency injection,
               aspect-oriented programming, and data access through its
-              integration with PostgreSQL. By utilizing Spring's robust
+              integration with PostgreSQL. By utilizing Spring&apos;s robust
               capabilities, developers can efficiently manage dependencies,
               handle database interactions seamlessly, and ensure code
               modularity and scalability. Overall, the MiniMarket project
