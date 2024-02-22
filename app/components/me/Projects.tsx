@@ -11,16 +11,25 @@ import {
 } from "@mantine/core";
 import { IconBoxModel, IconBrandGithub, IconLink } from "@tabler/icons-react";
 import React from "react";
-import classes from "../../../public/css/me/Projects.module.css"
+import classes from "../../../public/css/me/Projects.module.css";
+import firstImpressionCss from "../../../public/css/me/FirstImpression.module.css";
+
 
 const Projects = () => {
   return (
     <Stack justify="center" align="center" mb={100}>
-      <Title size="h1" c={"yellow"}>
+      <Title size="h1" c={"yellow"} className={firstImpressionCss.titleDeveloper}>
         Personal Projects
       </Title>
       <Group maw={1000} justify="center" gap={50}>
-        <Card maw={400} shadow="sm" padding="lg" radius="md" withBorder className={classes.projectCard}>
+        <Card
+          maw={400}
+          shadow="sm"
+          padding="lg"
+          radius="md"
+          withBorder
+          className={classes.projectCard}
+        >
           <Image src={"/image/want-logo.svg"} mt={40} mb={40} />
           <Group justify="space-between" mt="xs" mb="xs">
             <Text fw={500}>Want | 2023</Text>
@@ -60,18 +69,18 @@ const Projects = () => {
               commerce by enabling users to post their desired items and receive
               offers from sellers, thereby transforming the traditional buying
               and selling experience. Key features include: registration with
-              email code verification, login, password encryption,
-              password change functionality, real-time notifications through
-              WebSockets, post creation and editing capabilities, offer
-              creation, viewing offers on posted items, deletion of made offers
-              and posted items, reporting of posts and offers, reporting and
-              banning of accounts. All of these functions are facilitated
-              through a highly sophisticated geospatial system, which not only
-              displays posts in preferred categories but also allows users to
-              set their desired radius in kilometers within their country,
-              state, or city using latitude and longitude coordinates and IP-API
-              geospatial location. Furthermore, the platform supports multiple
-              languages including English, Spanish, and French.
+              email code verification, login, password encryption, password
+              change functionality, real-time notifications through WebSockets,
+              post creation and editing capabilities, offer creation, viewing
+              offers on posted items, deletion of made offers and posted items,
+              reporting of posts and offers, reporting and banning of accounts.
+              All of these functions are facilitated through a highly
+              sophisticated geospatial system, which not only displays posts in
+              preferred categories but also allows users to set their desired
+              radius in kilometers within their country, state, or city using
+              latitude and longitude coordinates and IP-API geospatial location.
+              Furthermore, the platform supports multiple languages including
+              English, Spanish, and French.
             </Text>
           </Spoiler>
           <Button
@@ -85,7 +94,14 @@ const Projects = () => {
             GitHub Repository
           </Button>
         </Card>
-        <Card maw={400} shadow="sm" padding="lg" radius="md" withBorder className={classes.projectCard}>
+        <Card
+          maw={400}
+          shadow="sm"
+          padding="lg"
+          radius="md"
+          withBorder
+          className={classes.projectCard}
+        >
           <Image src={"/image/cassie.png"} radius={10} />
           <Group justify="space-between" mt="xl" mb="xs">
             <Text fw={500}>CASSIE | 2022</Text>
@@ -120,6 +136,9 @@ const Projects = () => {
             mt="md"
             radius="md"
             leftSection={<IconBrandGithub />}
+            component="a"
+            target="_blank"
+            href="https://github.com/mauneven/cassie"
           >
             GitHub Repository
           </Button>
@@ -130,11 +149,21 @@ const Projects = () => {
             mt="md"
             radius="md"
             leftSection={<IconBoxModel />}
+            component="a"
+            target="_blank"
+            href="https://huggingface.co/openai-community/gpt2"
           >
             LLM | Credits: OpenAI
           </Button>
         </Card>
-        <Card maw={400} shadow="sm" padding="lg" radius="md" withBorder className={classes.projectCard}>
+        <Card
+          maw={400}
+          shadow="sm"
+          padding="lg"
+          radius="md"
+          withBorder
+          className={classes.projectCard}
+        >
           <Image src={"/image/spring.webp"} radius={10} />
           <Group justify="space-between" mt="md" mb="xs">
             <Text fw={500}>MiniMarket | 2021</Text>
@@ -177,11 +206,21 @@ const Projects = () => {
             mt="md"
             radius="md"
             leftSection={<IconBrandGithub />}
+            component="a"
+            target="_blank"
+            href="https://github.com/mauneven/minimarket"
           >
             GitHub Repository
           </Button>
         </Card>
-        <Card maw={400} shadow="sm" padding="lg" radius="md" withBorder className={classes.projectCard}>
+        <Card
+          maw={400}
+          shadow="sm"
+          padding="lg"
+          radius="md"
+          withBorder
+          className={classes.projectCard}
+        >
           <Image src={"/image/ato.png"} radius={10} />
           <Group justify="space-between" mt="md" mb="xs">
             <Text fw={500}>ATO Web | 2019</Text>
@@ -222,6 +261,9 @@ const Projects = () => {
             mt="md"
             radius="md"
             leftSection={<IconBrandGithub />}
+            component="a"
+            target="_blank"
+            href="https://github.com/mauneven/Atorquideas"
           >
             GitHub Repository
           </Button>
@@ -232,6 +274,9 @@ const Projects = () => {
             mt="md"
             radius="md"
             leftSection={<IconLink />}
+            component="a"
+            target="_blank"
+            href="https://mauneven.github.io/Atorquideas/"
           >
             Check the page
           </Button>
