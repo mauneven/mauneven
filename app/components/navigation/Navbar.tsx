@@ -6,12 +6,7 @@ import {
   Text,
   Drawer,
   ScrollArea,
-  Button,
   Divider,
-  Collapse,
-  UnstyledButton,
-  Center,
-  Box,
   rem,
   Stack,
 } from "@mantine/core";
@@ -29,7 +24,6 @@ const links = [
 export function HeaderMenu() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] =
     useDisclosure(false);
-  const [opened, { toggle }] = useDisclosure(false);
 
   const items = links.map((link) => (
     <a
@@ -47,7 +41,7 @@ export function HeaderMenu() {
       <div className={classes.inner}>
         <Group justify="space-between">
           <Burger
-            opened={opened}
+            opened={drawerOpened}
             onClick={toggleDrawer}
             size="sm"
             hiddenFrom="sm"

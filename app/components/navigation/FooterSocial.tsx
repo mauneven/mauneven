@@ -1,5 +1,5 @@
 import { Container, Group, ActionIcon, rem, Text } from '@mantine/core';
-import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram, IconBrandLinkedin, IconBrandGithub } from '@tabler/icons-react';
+import { IconBrandLinkedin, IconBrandGithub } from '@tabler/icons-react';
 import classes from '../../../public/css/navigation/FooterSocial.module.css';
 
 export function FooterSocial() {
@@ -13,9 +13,6 @@ export function FooterSocial() {
           </ActionIcon>
           <ActionIcon size="lg" color="gray" variant="subtle">
             <IconBrandGithub style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
-          </ActionIcon>
-          <ActionIcon size="lg" color="gray" variant="subtle">
-            <IconBrandInstagram style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
           </ActionIcon>
         </Group>
       </Container>
