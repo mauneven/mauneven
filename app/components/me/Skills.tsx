@@ -4,11 +4,11 @@ import classes from "../../../public/css/me/FirstImpression.module.css";
 
 const Skills = () => {
   return (
-    <Stack justify="center" align="center">
+    <Stack justify="center" align="center" style={{ minHeight: "90vh" }}>
       <Title c={"yellow"} className={classes.titleDeveloper}>
         Skills & Stacks
       </Title>
-      <Group maw={900} justify="center">
+      <Group maw={900} justify="center" mt={40}>
         <Paper shadow="xs" p={"lg"} withBorder>
           <Title c={"orange"} size={"h2"} ta={"center"}>
             Languages

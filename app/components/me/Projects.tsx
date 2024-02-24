@@ -17,7 +17,7 @@ import firstImpressionCss from "../../../public/css/me/FirstImpression.module.cs
 
 const Projects = () => {
   return (
-    <Stack justify="center" align="center" mb={100}>
+    <Stack justify="center" align="center" mb={100} style={{ minHeight: "90vh" }}>
       <Title size="h1" c={"yellow"} className={firstImpressionCss.titleDeveloper}>
         Personal Projects
       </Title>

@@ -3,7 +3,7 @@ import React from "react";
 import classes from "../../../public/css/me/FirstImpression.module.css";
 const EducationAndCertifications = () => {
   return (
-    <Stack justify="center" align="center" gap={100}>
+    <Stack justify="center" align="center" gap={100} style={{ minHeight: "90vh" }}>
       <Title className={classes.titleDeveloper} c={"yellow"}>
         Education and certifications
       </Title>

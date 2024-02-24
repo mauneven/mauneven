@@ -89,7 +89,12 @@ const FirstImpression = () => {
           </Text>
         </Paper>
       </Flex>
-      <Button variant="light" radius={"md"} onClick={handleScrollDown}>
+      <Button
+        color="yellow"
+        variant="light"
+        radius={"md"}
+        onClick={handleScrollDown}
+      >
         <IconArrowDown />
       </Button>
     </Stack>

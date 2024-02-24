@@ -6,7 +6,7 @@ import classes from "../../../public/css/me/FirstImpression.module.css";
 
 const Experience = () => {
   return (
-    <Stack mb={50} gap={30} justify="center" align="center">
+    <Stack mb={50} gap={30} justify="center" align="center" style={{ minHeight: "90vh" }}>
       <Text c={"yellow"} className={classes.titleDeveloper}>Experience</Text>
       <Timeline color="yellow" active={3} bulletSize={50} lineWidth={4}>
         <Timeline.Item>
@@ -14,7 +14,7 @@ const Experience = () => {
             FullStack Software Developer
           </Title>
           <Text size="xl" mt={20} mb={20}>
-            BeBolder - Airlines Industry
+            BeBolder - Airlines Industry 
           </Text>
           <Group maw={800}>
             <Badge size="lg" color="green" variant="light">Spring</Badge>

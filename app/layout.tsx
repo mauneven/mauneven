@@ -23,7 +23,6 @@ export default function RootLayout({
         <MantineProvider
           theme={{
             colors: {
-              // override dark colors here to change them for all components
               dark: [
                 "#e0e0e0",
                 "#c2c2c2",

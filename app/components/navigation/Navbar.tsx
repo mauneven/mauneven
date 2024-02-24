@@ -9,6 +9,7 @@ import {
   Divider,
   rem,
   Stack,
+  Container,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import classes from "../../../public/css/navigation/HeaderMenu.module.css";
@@ -17,6 +18,7 @@ import ThemeChanger from "../themes/ThemeChanger";
 const links = [
   { link: "/about", label: "Experience" },
   { link: "/pricing", label: "Projects" },
+  { link: "/skills", label: "Skills" },
   { link: "/learn", label: "Education & Certifications" },
   { link: "/community", label: "Social" },
 ];
@@ -38,7 +40,7 @@ export function HeaderMenu() {
 
   return (
     <header className={classes.header}>
-      <div className={classes.inner}>
+      <Container className={classes.inner}>
         <Group justify="space-between">
           <Burger
             opened={drawerOpened}
@@ -78,7 +80,7 @@ export function HeaderMenu() {
             </Stack>
           </ScrollArea>
         </Drawer>
-      </div>
+      </Container>
     </header>
   );
 }
