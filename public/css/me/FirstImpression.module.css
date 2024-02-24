@@ -27,3 +27,14 @@
     align-items: center;
     border: 5px solid light-dark(rgb(47, 47, 47), rgb(194, 194, 194));
 }
+
+.iconImage{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}

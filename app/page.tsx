@@ -5,6 +5,7 @@ import { Stack } from "@mantine/core";
 import Projects from "./components/me/Projects";
 import EducationAndCertifications from "./components/me/EducationAndCertifications";
 import Social from "./components/me/Social";
+import Skills from "./components/me/Skills";
 
 const page = () => {
   return (
@@ -12,6 +13,7 @@ const page = () => {
       <FirstImpression />
       <Experience />
       <Projects/>
+      <Skills/>
       <EducationAndCertifications/>
       <Social/>
     </Stack>
