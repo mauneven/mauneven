@@ -9,7 +9,7 @@ const EducationAndCertifications = () => {
       </Title>
       <Group gap={100} justify="center">
         <Title ta={"center"} maw={400}>
-          Software Engineer, Bachelor's degree
+          Software Engineer, Bachelor&apos;s degree
         </Title>
         <Paper miw={350}  shadow="xl" p={20} withBorder>
           <Title ta={"center"}>
