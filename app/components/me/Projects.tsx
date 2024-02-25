@@ -14,14 +14,22 @@ import React from "react";
 import classes from "../../../public/css/me/Projects.module.css";
 import firstImpressionCss from "../../../public/css/me/FirstImpression.module.css";
 
-
 const Projects = () => {
   return (
-    <Stack justify="center" align="center" mb={100} style={{ minHeight: "90vh" }}>
-      <Title size="h1" c={"yellow"} className={firstImpressionCss.titleDeveloper}>
+    <Stack
+      justify="center"
+      align="center"
+      mb={100}
+      style={{ minHeight: "100vh" }}
+    >
+      <Title
+        size="h1"
+        c={"yellow"}
+        className={firstImpressionCss.titleDeveloper}
+      >
         Personal Projects
       </Title>
-      <Group maw={1000} justify="center" gap={50}>
+      <Group maw={1000} justify="center" gap={50} mt={40}>
         <Card
           maw={400}
           shadow="sm"

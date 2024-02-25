@@ -25,7 +25,7 @@ const FirstImpression = () => {
       justify="center"
       align="center"
       gap={40}
-      style={{ minHeight: "90vh" }}
+      style={{ minHeight: "100vh" }}
     >
       <Stack justify="center" align="center" gap={10}>
         <Text c={"yellow"} className={classes.titleDeveloper}>

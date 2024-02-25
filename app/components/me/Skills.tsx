@@ -4,7 +4,7 @@ import classes from "../../../public/css/me/FirstImpression.module.css";
 
 const Skills = () => {
   return (
-    <Stack justify="center" align="center" style={{ minHeight: "90vh" }}>
+    <Stack justify="center" align="center" style={{ minHeight: "100vh" }}>
       <Title c={"yellow"} className={classes.titleDeveloper}>
         Skills & Stacks
       </Title>

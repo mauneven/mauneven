@@ -38,3 +38,9 @@
     margin: 0;
     padding: 0;
 }
+
+@media(max-width: 580px){
+    .titleDeveloper{
+        margin-top: 60px;
+    }
+}

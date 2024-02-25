@@ -1,5 +1,5 @@
 "use client";
-
+import React from "react";
 import {
   Group,
   Burger,
@@ -16,23 +16,67 @@ import classes from "../../../public/css/navigation/HeaderMenu.module.css";
 import ThemeChanger from "../themes/ThemeChanger";
 
 const links = [
-  { link: "/about", label: "Experience" },
-  { link: "/pricing", label: "Projects" },
-  { link: "/skills", label: "Skills" },
-  { link: "/learn", label: "Education & Certifications" },
-  { link: "/community", label: "Social" },
+  { link: "/", label: "Home" },
+  { link: "/", label: "Experience" },
+  { link: "/", label: "Projects" },
+  { link: "/", label: "Skills" },
+  { link: "/", label: "Education & Certifications" },
+  { link: "/", label: "Social" },
 ];
 
 export function HeaderMenu() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] =
     useDisclosure(false);
 
+  const handleLinkClick = (
+    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+    label: string
+  ) => {
+    event.preventDefault();
+
+    let sectionId = "";
+    switch (label) {
+      case "Home":
+        sectionId = "home";
+        break;
+      case "Experience":
+        sectionId = "experience";
+        break;
+      case "Projects":
+        sectionId = "projects";
+        break;
+      case "Skills":
+        sectionId = "skills";
+        break;
+      case "Education & Certifications":
+        sectionId = "education";
+        break;
+      case "Social":
+        sectionId = "social";
+        break;
+      default:
+        console.log("Section not found");
+    }
+
+    const section = document.getElementById(sectionId);
+    if (section) {
+      if (label !== "Experience" && label !== "Social") {
+        const offset = 100;
+        const sectionTop =
+          section.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top: sectionTop, behavior: "smooth" });
+      } else {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
+
   const items = links.map((link) => (
     <a
       key={link.label}
       href={link.link}
       className={classes.link}
-      onClick={(event) => event.preventDefault()}
+      onClick={(event) => handleLinkClick(event, link.label)}
     >
       {link.label}
     </a>
