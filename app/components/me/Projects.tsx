@@ -75,7 +75,7 @@ const Projects = () => {
               AWS
             </Badge>
           </Group>
-          <Spoiler maxHeight={54} showLabel="Show more" hideLabel="Hide">
+          <Spoiler maxHeight={68} showLabel="Show more" hideLabel="Hide">
             <Text size="sm" c="dimmed">
               This project is the most advanced and ambitious endeavor to date.
               Want stands as a groundbreaking platform that redifines online
@@ -214,7 +214,7 @@ const Projects = () => {
               INTELLIJ IDEA
             </Badge>
           </Group>
-          <Spoiler maxHeight={150} showLabel="Show more" hideLabel="Hide">
+          <Spoiler maxHeight={152} showLabel="Show more" hideLabel="Hide">
             <Text size="sm" c="dimmed">
               The MiniMarket project is a fundamental Java project leveraging
               the Spring framework and PostgreSQL database. It employs essential
