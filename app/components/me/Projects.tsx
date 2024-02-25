@@ -44,9 +44,9 @@ const Projects = () => {
               src={"/image/want-logo-c.png"}
             />
           </Group>
-          <Group justify="space-between" mt="xs" mb="xs">
-            <Text fw={500} mt="xl" mb="xs">WANT | 2023</Text>
-            <Badge color="violet">In Progress</Badge>
+          <Group justify="space-between" mt="md" mb="xs">
+            <Text fw={500} mt="xs" mb="xs">WANT | 2023</Text>
+            <Badge color="blue">In Progress</Badge>
           </Group>
 
           <Group mt="md" mb="xl">
@@ -197,7 +197,7 @@ const Projects = () => {
             />
           </Group>
           <Group justify="space-between" mt="md" mb="xs">
-            <Text fw={500}>MiniMarket | 2021</Text>
+            <Text fw={500} mt="xs" mb="xs">MiniMarket | 2021</Text>
             <Badge color="green">FINISHED</Badge>
           </Group>
           <Group mt="md" mb="xl">
@@ -259,8 +259,8 @@ const Projects = () => {
               alt="ato"
             />
           </Group>
-          <Group justify="space-between" mt="md" mb="xs">
-            <Text fw={500}>ATO Web | 2019</Text>
+          <Group justify="space-between" mt="md" mb="xs" >
+            <Text fw={500} mt="xs" mb="xs">ATO Web | 2019</Text>
             <Badge color="green">FINISHED</Badge>
           </Group>
           <Group mt="md" mb="xl">
