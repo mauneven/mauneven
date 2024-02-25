@@ -61,7 +61,7 @@ export function HeaderMenu() {
     const section = document.getElementById(sectionId);
     if (section) {
       if (label !== "Experience" && label !== "Social") {
-        const offset = 100;
+        const offset = 85;
         const sectionTop =
           section.getBoundingClientRect().top + window.scrollY - offset;
         window.scrollTo({ top: sectionTop, behavior: "smooth" });

@@ -7,7 +7,6 @@ import {
   Button,
   Badge,
   Spoiler,
-  Image,
 } from "@mantine/core";
 import { IconBoxModel, IconBrandGithub, IconLink } from "@tabler/icons-react";
 import React from "react";
@@ -38,7 +37,13 @@ const Projects = () => {
           withBorder
           className={classes.projectCard}
         >
-          <Image src={"/image/want-logo.svg"} mt={40} mb={40} />
+          <Group justify="center">
+            <img
+              alt="want"
+              className={classes.projectImage}
+              src={"/image/want-logo-c.png"}
+            />
+          </Group>
           <Group justify="space-between" mt="xs" mb="xs">
             <Text fw={500}>Want | 2023</Text>
             <Badge color="violet">In Progress</Badge>
@@ -70,7 +75,7 @@ const Projects = () => {
               AWS
             </Badge>
           </Group>
-          <Spoiler maxHeight={115} showLabel="Show more" hideLabel="Hide">
+          <Spoiler maxHeight={96} showLabel="Show more" hideLabel="Hide">
             <Text size="sm" c="dimmed">
               This project is the most advanced and ambitious endeavor to date.
               Want stands as a groundbreaking platform that redifines online
@@ -110,7 +115,13 @@ const Projects = () => {
           withBorder
           className={classes.projectCard}
         >
-          <Image src={"/image/cassie.png"} radius={10} />
+          <Group justify="center">
+            <img
+              src={"/image/cassie.png"}
+              alt="cassie"
+              className={classes.projectImage}
+            />
+          </Group>
           <Group justify="space-between" mt="xl" mb="xs">
             <Text fw={500}>CASSIE | 2022</Text>
             <Badge color="green">FINISHED</Badge>
@@ -119,6 +130,9 @@ const Projects = () => {
           <Group mt="md" mb="xl">
             <Badge variant="light" color="orange">
               AI
+            </Badge>
+            <Badge variant="light" color="orange">
+              LLM
             </Badge>
             <Badge variant="light" color="orange">
               Python
@@ -172,7 +186,13 @@ const Projects = () => {
           withBorder
           className={classes.projectCard}
         >
-          <Image src={"/image/spring.webp"} radius={10} />
+          <Group justify="center">
+            <img
+              src={"/image/spring.webp"}
+              className={classes.projectImage}
+              alt="spring"
+            />
+          </Group>
           <Group justify="space-between" mt="md" mb="xs">
             <Text fw={500}>MiniMarket | 2021</Text>
             <Badge color="green">FINISHED</Badge>
@@ -191,7 +211,7 @@ const Projects = () => {
               INTELLIJ IDEA
             </Badge>
           </Group>
-          <Spoiler maxHeight={89} showLabel="Show more" hideLabel="Hide">
+          <Spoiler maxHeight={150} showLabel="Show more" hideLabel="Hide">
             <Text size="sm" c="dimmed">
               The MiniMarket project is a fundamental Java project leveraging
               the Spring framework and PostgreSQL database. It employs essential
@@ -229,7 +249,13 @@ const Projects = () => {
           withBorder
           className={classes.projectCard}
         >
-          <Image src={"/image/ato.png"} radius={10} />
+          <Group justify="center">
+            <img
+              src={"/image/ato.png"}
+              className={classes.projectImage}
+              alt="ato"
+            />
+          </Group>
           <Group justify="space-between" mt="md" mb="xs">
             <Text fw={500}>ATO Web | 2019</Text>
             <Badge color="green">FINISHED</Badge>
