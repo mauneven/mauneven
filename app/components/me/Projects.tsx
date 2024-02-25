@@ -102,9 +102,12 @@ const Projects = () => {
             fullWidth
             mt="md"
             radius="md"
-            leftSection={<IconBrandGithub />}
+            leftSection={<IconLink />}
+            component="a"
+            href="https://want-landing.vercel.app/"
+            target="_blank"
           >
-            GitHub Repository
+            Check landing
           </Button>
         </Card>
         <Card

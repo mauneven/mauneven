@@ -20,16 +20,29 @@ const Social = () => {
           color="yellow"
           leftSection={<IconBrandLinkedin />}
           variant="light"
+          component="a"
+          href="https://www.linkedin.com/in/mauneven/"
+          target="_blank"
         >
           Linkedin
         </Button>
-        <Button color="yellow" leftSection={<IconBrandX />} variant="light">
+        <Button
+          color="yellow"
+          leftSection={<IconBrandX />}
+          variant="light"
+          component="a"
+          href="https://twitter.com/maoneven"
+          target="_blank"
+        >
           Twitter / X
         </Button>
         <Button
           color="yellow"
           leftSection={<IconBrandTelegram />}
           variant="light"
+          component="a"
+          href="https://t.me/mauneven"
+          target="_blank"
         >
           Telegram
         </Button>
@@ -37,6 +50,9 @@ const Social = () => {
           color="yellow"
           leftSection={<IconBrandSpotify />}
           variant="light"
+          component="a"
+          href="https://open.spotify.com/user/31wxwnhec6axp3n6yxdnw4z64hwi?si=qizsTYPZR2G4lfqOPSd41A&nd=1&dlsi=debed967c8134a4e"
+          target="_blank"
         >
           Spotify
         </Button>
@@ -44,6 +60,9 @@ const Social = () => {
           color="yellow"
           leftSection={<IconBrandGithub />}
           variant="light"
+          component="a"
+          href="https://github.com/mauneven"
+          target="_blank"
         >
           GitHub
         </Button>

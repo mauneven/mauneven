@@ -55,6 +55,9 @@ const FirstImpression = () => {
             variant="light"
             radius={"md"}
             leftSection={<IconBrandLinkedin />}
+            component="a"
+            href="https://www.linkedin.com/in/mauneven/"
+            target="_blank"
           >
             LinkedIn
           </Button>
@@ -63,6 +66,9 @@ const FirstImpression = () => {
             color="grape"
             radius={"md"}
             leftSection={<IconBrandGithubFilled />}
+            component="a"
+            href="https://github.com/mauneven"
+            target="_blank"
           >
             GitHub
           </Button>
@@ -71,6 +77,9 @@ const FirstImpression = () => {
             color="lime"
             radius={"md"}
             leftSection={<IconFileInfo />}
+            component="a"
+            href="/pdf/cv.pdf"
+            target="_blank"
           >
             CV
           </Button>
