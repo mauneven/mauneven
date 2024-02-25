@@ -37,6 +37,7 @@ export default function RootLayout({
               ],
             },
           }}
+          defaultColorScheme="dark"
         >
           <HeaderMenu />
           <Container fluid>{children}</Container>
