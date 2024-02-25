@@ -33,6 +33,8 @@ export function HeaderMenu() {
     label: string
   ) => {
     event.preventDefault();
+    closeDrawer();
+    
 
     let sectionId = "";
     switch (label) {
