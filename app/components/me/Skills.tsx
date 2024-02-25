@@ -153,12 +153,13 @@ const Skills = () => {
               ></Image>
               <Text mt={20}>AWS</Text>
             </Stack>
-            <Stack justify="center" align="center" gap={20} mt={20}>
+            <Stack justify="center" align="center" gap={20}>
               <Image
-                src={"/image/googleCloud.png"}
+                p={4}
+                src={"/image/gcp.png"}
                 className={classes.iconImage}
               ></Image>
-              <Text mt={10}>GCP</Text>
+              <Text mt={5}>Google Cloud</Text>
             </Stack>
             <Stack justify="center" align="center" gap={20}>
               <Image
@@ -203,7 +204,8 @@ const Skills = () => {
               <Text>GitLab</Text>
             </Stack>
             <Stack justify="center" align="center" gap={15}>
-              <Image p={5}
+              <Image
+                p={5}
                 src={"/image/linux.png"}
                 className={classes.iconImage}
               ></Image>

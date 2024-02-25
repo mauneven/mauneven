@@ -45,7 +45,7 @@ const Projects = () => {
             />
           </Group>
           <Group justify="space-between" mt="xs" mb="xs">
-            <Text fw={500}>Want | 2023</Text>
+            <Text fw={500} mt="xl" mb="xs">WANT | 2023</Text>
             <Badge color="violet">In Progress</Badge>
           </Group>
 
@@ -75,7 +75,7 @@ const Projects = () => {
               AWS
             </Badge>
           </Group>
-          <Spoiler maxHeight={96} showLabel="Show more" hideLabel="Hide">
+          <Spoiler maxHeight={54} showLabel="Show more" hideLabel="Hide">
             <Text size="sm" c="dimmed">
               This project is the most advanced and ambitious endeavor to date.
               Want stands as a groundbreaking platform that redifines online
