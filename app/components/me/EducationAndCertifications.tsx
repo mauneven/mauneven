@@ -4,7 +4,7 @@ import classes from "../../../public/css/me/FirstImpression.module.css";
 const EducationAndCertifications = () => {
   return (
     <Stack justify="center" align="center" gap={100} >
-      <Title className={classes.titleDeveloper} c={"yellow"}>
+      <Title ta={"center"} className={classes.titleDeveloper} c={"yellow"}>
         Education and certifications
       </Title>
       <Group gap={100} justify="center">
