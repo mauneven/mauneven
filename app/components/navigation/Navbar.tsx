@@ -3,13 +3,13 @@ import React from "react";
 import {
   Group,
   Burger,
-  Text,
   Drawer,
   ScrollArea,
   Divider,
   rem,
   Stack,
   Container,
+  Button,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import classes from "../../../public/css/navigation/HeaderMenu.module.css";
@@ -94,7 +94,7 @@ export function HeaderMenu() {
             size="sm"
             hiddenFrom="sm"
           />
-          <Text>Mauneven</Text>
+          <Button variant="transparent" c={"yellow"} onClick={(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => handleLinkClick(event, "Home")}>Mauneven</Button>
         </Group>
 
         <Group>
