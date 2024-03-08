@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import {
   Group,
@@ -28,10 +27,7 @@ export function HeaderMenu() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] =
     useDisclosure(false);
 
-  const handleLinkClick = (
-    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
-    label: string
-  ) => {
+  const handleLinkClick = (event: React.MouseEvent, label: string) => {
     event.preventDefault();
     closeDrawer();
 
@@ -77,9 +73,7 @@ export function HeaderMenu() {
       key={link.label}
       href={link.link}
       className={classes.link}
-      onClick={(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) =>
-        handleLinkClick(event, link.label)
-      }
+      onClick={(event) => handleLinkClick(event, link.label)}
     >
       {link.label}
     </a>
@@ -98,9 +92,7 @@ export function HeaderMenu() {
           <Button
             variant="transparent"
             c={"yellow"}
-            onClick={(event: React.MouseEvent<HTMLButtonElement, MouseEvent>) =>
-              handleLinkClick(event, "Home")
-            }
+            onClick={(event) => handleLinkClick(event, "Home")}
           >
             Mauneven
           </Button>
