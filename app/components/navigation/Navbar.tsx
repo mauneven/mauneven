@@ -34,7 +34,6 @@ export function HeaderMenu() {
   ) => {
     event.preventDefault();
     closeDrawer();
-    
 
     let sectionId = "";
     switch (label) {
@@ -78,7 +77,9 @@ export function HeaderMenu() {
       key={link.label}
       href={link.link}
       className={classes.link}
-      onClick={(event) => handleLinkClick(event, link.label)}
+      onClick={(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) =>
+        handleLinkClick(event, link.label)
+      }
     >
       {link.label}
     </a>
@@ -94,7 +95,15 @@ export function HeaderMenu() {
             size="sm"
             hiddenFrom="sm"
           />
-          <Button variant="transparent" c={"yellow"} onClick={(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => handleLinkClick(event, "Home")}>Mauneven</Button>
+          <Button
+            variant="transparent"
+            c={"yellow"}
+            onClick={(event: React.MouseEvent<HTMLButtonElement, MouseEvent>) =>
+              handleLinkClick(event, "Home")
+            }
+          >
+            Mauneven
+          </Button>
         </Group>
 
         <Group>
