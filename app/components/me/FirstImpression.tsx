@@ -72,17 +72,6 @@ const FirstImpression = () => {
           >
             GitHub
           </Button>
-          <Button
-            variant="light"
-            color="lime"
-            radius={"md"}
-            leftSection={<IconFileInfo />}
-            component="a"
-            href="/pdf/cv.pdf"
-            target="_blank"
-          >
-            CV
-          </Button>
         </Group>
       </Stack>
       <Flex align="center" justify="center" wrap="wrap" gap={50}>
