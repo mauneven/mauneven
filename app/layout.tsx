@@ -6,7 +6,7 @@ import { HeaderMenu } from "./components/navigation/Navbar";
 import { FooterSocial } from "./components/navigation/FooterSocial";
 
 export const metadata = {
-  title: "Maunenven's Portfolio",
+  title: "Maunenven",
 };
 
 export default function RootLayout({

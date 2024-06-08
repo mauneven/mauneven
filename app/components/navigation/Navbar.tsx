@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import {
   Group,
@@ -14,6 +14,7 @@ import {
 import { useDisclosure } from "@mantine/hooks";
 import classes from "../../../public/css/navigation/HeaderMenu.module.css";
 import ThemeChanger from "../themes/ThemeChanger";
+import { useRouter, usePathname } from "next/navigation";
 
 const links = [
   { link: "/", label: "Home" },
@@ -27,6 +28,9 @@ const links = [
 export function HeaderMenu() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] =
     useDisclosure(false);
+
+  const router = useRouter();
+  const pathname = usePathname();
 
   const handleLinkClick = (event: React.MouseEvent, label: string) => {
     event.preventDefault();
@@ -93,17 +97,28 @@ export function HeaderMenu() {
           <Button
             variant="transparent"
             c={"yellow"}
-            onClick={(event) => handleLinkClick(event, "Home")}
+            onClick={() => router.push("/")}
           >
             Mauneven
           </Button>
         </Group>
 
         <Group>
-          <Group ml={50} gap={5} className={classes.links} visibleFrom="sm">
-            {items}
-            <ThemeChanger />
-          </Group>
+          {pathname === "/about" && (
+            <Group ml={50} gap={5} className={classes.links} visibleFrom="sm">
+              {items}
+            </Group>
+          )}
+          {pathname !== "/about" && (
+            <Button
+              variant="light"
+              color="yellow"
+              onClick={() => router.push("/about")}
+            >
+              About
+            </Button>
+          )}
+           <ThemeChanger />
         </Group>
 
         <Drawer
