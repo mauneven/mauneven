@@ -22,31 +22,6 @@ const page = () => {
             The Beginning Story
           </Text>
           <Text maw={600}>
-            That&apos;s how it started. It was simple. It was such a simple idea
-            that it didn&apos;t exist yet. I went crazy thinking about how to
-            make it a reality. At that time, I was switching from electronic
-            engineering to systems engineering at the University of Ibagué.
-            Later, I ended up switching to the National Open and Distance
-            University (UNAD) because I had to work full-time and couldn&apos;t
-            attend classes or afford the university completely. Anyway, this
-            idea grew in my brain and spread like cancer until it consumed my
-            entire head and I idealized it as the idea that would lift me out of
-            poverty (2024, haha). So, I started
-            development. At that time, I did it with PHP. It was garbage; it was
-            terrible and didn&apos;t work at all, but at least I had an initial
-            idea and started gaining experience with development. However, I
-            didn&apos;t even know how to use Git back then, so I stored the
-            repository on a university drive. I studied much more about
-            languages and frameworks, especially about large projects, and
-            concluded that I needed dedicated people. The problem is you
-            don&apos;t find many worthwhile people at the university for such an
-            ambitious project. But I managed to find a team of three people to
-            present it as a beta in a software engineering course. In the team,
-            we were Brayan, Santiago, and Eder developing what would be the
-            first beta of the project. Even though I did more than 60% of the
-            development, having people who can support you helps a lot.
-          </Text>
-          <Text maw={600}>
             So that&apos;s how it started. It was simple. It was such a simple
             idea that it didn&apos;t exist yet. I went crazy thinking about how
             to make it a reality. At that time, I was switching from electronic
@@ -56,7 +31,7 @@ const page = () => {
             couldn&apos;t attend classes or afford the university completely).
             Anyway, this idea grew in my brain and spread like cancer until it
             consumed my entire head and I idealized it as the idea that would
-            lift me out of poverty (which it didn&apos;t until 2024, haha). So,
+            lift me out of poverty (2022, haha). So,
             I started development. At that time, I did it with PHP. It was
             garbage; it was terrible and didn&apos;t work at all, but at least I
             had an initial idea and started gaining experience with development.
