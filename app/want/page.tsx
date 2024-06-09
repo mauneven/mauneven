@@ -41,7 +41,7 @@ const page = () => {
             ambitious project. But I managed to find a team of four people to
             present it as a beta in a software engineering course. In the team,
             we were Brayan, Santiago, Eder, and Manuel developing what would be
-            the first beta of the project. Even though I did more than 70% of
+            the first beta of the project. Even though I did more than 80% of
             the development, having people who can support you helps a lot. This
             time, the technologies were a bit better, but not perfect. The
             development of the first beta was done in NodeJS with Express in a
