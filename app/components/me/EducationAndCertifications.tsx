@@ -3,8 +3,8 @@ import React from "react";
 import classes from "../../../public/css/me/FirstImpression.module.css";
 const EducationAndCertifications = () => {
   return (
-    <Stack justify="center" align="center" gap={100} >
-      <Title ta={"center"} className={classes.titleDeveloper} c={"yellow"}>
+    <Stack justify="center" align="center" gap={100}  style={{ minHeight: "100vh" }}>
+      <Title ta={"center"} className={classes.titleDeveloper} c={"gray"}>
         Education and certifications
       </Title>
       <Group gap={100} justify="center">

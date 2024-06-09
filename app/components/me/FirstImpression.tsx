@@ -5,10 +5,9 @@ import React from "react";
 import classes from "../../../public/css/me/FirstImpression.module.css";
 import {
   IconArrowDown,
-  IconBrandGithubFilled,
+  IconBrandGithub,
   IconBrandLinkedin,
   IconBriefcase,
-  IconFileInfo,
   IconWorldPin,
 } from "@tabler/icons-react";
 
@@ -24,55 +23,63 @@ const FirstImpression = () => {
     <Stack
       justify="center"
       align="center"
-      gap={40}
       style={{ minHeight: "100vh" }}
     >
-      <Stack justify="center" align="center" gap={10}>
-        <Text c={"yellow"} className={classes.titleDeveloper}>
-          Software Developer
-        </Text>
-        <Group justify="space-between" wrap="wrap-reverse">
-          <Badge
-            size="xl"
-            color="green"
-            variant="light"
-            leftSection={<IconWorldPin />}
-          >
-            Colombia
-          </Badge>
-          <Badge
-            size="xl"
-            color="orange"
-            variant="light"
-            leftSection={<IconBriefcase />}
-          >
-            Be Bolder
-          </Badge>
-        </Group>
-        <Text className={classes.titleName}>Mauricio Pulido</Text>
-        <Group justify="center" gap={20}>
-          <Button
-            variant="light"
-            radius={"md"}
-            leftSection={<IconBrandLinkedin />}
-            component="a"
-            href="https://www.linkedin.com/in/mauneven/"
-            target="_blank"
-          >
-            LinkedIn
-          </Button>
-          <Button
-            variant="light"
-            color="grape"
-            radius={"md"}
-            leftSection={<IconBrandGithubFilled />}
-            component="a"
-            href="https://github.com/mauneven"
-            target="_blank"
-          >
-            GitHub
-          </Button>
-        </Group>
+      <Text  mb={0} c={"gray"} className={classes.titleDeveloper}>
+        About
+      </Text>
+      <Stack justify="center" align="center" gap={20}>
+        <Stack gap={2}>
+          <Text ta={"center"} className={classes.titleName}>Mauricio Pulido</Text>
+          <Text ta={"center"} size="xl" fw={600} mb={10}>
+            Software Developer
+          </Text>
+        </Stack>
+
+        <Stack justify="center" gap={20}>
+          <Group justify="center" gap={20}>
+            <Button
+              variant="light"
+              color="gray"
+              radius={"md"}
+              leftSection={<IconBrandLinkedin />}
+              component="a"
+              href="https://www.linkedin.com/in/mauneven/"
+              target="_blank"
+            >
+              LinkedIn
+            </Button>
+            <Button
+              variant="light"
+              color="gray"
+              radius={"md"}
+              leftSection={<IconBrandGithub />}
+              component="a"
+              href="https://github.com/mauneven"
+              target="_blank"
+            >
+              GitHub
+            </Button>
+          </Group>
+          <Group justify="space-between" wrap="wrap-reverse">
+            <Badge
+              size="xl"
+              color="gray"
+              variant="light"
+              leftSection={<IconWorldPin />}
+            >
+              Colombia
+            </Badge>
+            <Badge
+              size="xl"
+              color="gray"
+              variant="light"
+              leftSection={<IconBriefcase />}
+            >
+              Be Bolder
+            </Badge>
+          </Group>
+        </Stack>
       </Stack>
       <Flex align="center" justify="center" wrap="wrap" gap={50}>
         <img src={"/image/me.jpg"} className={classes.profileImage} alt={""} />
@@ -81,14 +88,14 @@ const FirstImpression = () => {
             Developing software isn&apos;t just about coding; it&apos;s about
             understanding the business and environment you&apos;re in, to bring
             solutions to the problems faced by the people within it,{" "}
-            <Text span c="yellow" inherit>
+            <Text span c="gray" inherit>
               creating something people want.
             </Text>
           </Text>
         </Paper>
       </Flex>
       <Button
-        color="yellow"
+        color="gray"
         variant="light"
         radius={"md"}
         onClick={handleScrollDown}

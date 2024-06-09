@@ -23,7 +23,7 @@ const Projects = () => {
     >
       <Title
         size="h1"
-        c={"yellow"}
+        c={"gray"}
         className={firstImpressionCss.titleDeveloper}
       >
         Personal Projects
@@ -45,33 +45,33 @@ const Projects = () => {
             />
           </Group>
           <Group justify="space-between" mt="md" mb="xs">
-            <Text fw={500} mt="xs" mb="xs">WANT | 2023</Text>
-            <Badge color="blue">In Progress</Badge>
+            <Text fw={500} mt="xs" mb="xs">Want</Text>
+            <Badge color="gray">In Progress</Badge>
           </Group>
 
           <Group mt="md" mb="xl">
-            <Badge variant="light" color="orange">
+            <Badge variant="light" color="gray">
               NodeJS
             </Badge>
-            <Badge variant="light" color="orange">
+            <Badge variant="light" color="gray">
               Spring
             </Badge>
-            <Badge variant="light" color="orange">
+            <Badge variant="light" color="gray">
               NextJS
             </Badge>
-            <Badge variant="light" color="orange">
+            <Badge variant="light" color="gray">
               React Native
             </Badge>
-            <Badge variant="light" color="orange">
+            <Badge variant="light" color="gray">
               TypeScript
             </Badge>
-            <Badge variant="light" color="orange">
+            <Badge variant="light" color="gray">
               WebSockets
             </Badge>
-            <Badge variant="light" color="orange">
+            <Badge variant="light" color="gray">
               Rest
             </Badge>
-            <Badge variant="light" color="orange">
+            <Badge variant="light" color="gray">
               AWS
             </Badge>
           </Group>
@@ -98,7 +98,7 @@ const Projects = () => {
           </Spoiler>
           <Button
             variant="light"
-            color="orange"
+            color="gray"
             fullWidth
             mt="md"
             radius="md"
@@ -126,24 +126,24 @@ const Projects = () => {
             />
           </Group>
           <Group justify="space-between" mt="xl" mb="xs">
-            <Text fw={500}>CASSIE | 2022</Text>
-            <Badge color="green">FINISHED</Badge>
+            <Text fw={500}>Cassie</Text>
+            <Badge color="gray">FINISHED</Badge>
           </Group>
 
           <Group mt="md" mb="xl">
-            <Badge variant="light" color="orange">
+            <Badge variant="light" color="gray">
               AI
             </Badge>
-            <Badge variant="light" color="orange">
+            <Badge variant="light" color="gray">
               LLM
             </Badge>
-            <Badge variant="light" color="orange">
+            <Badge variant="light" color="gray">
               Python
             </Badge>
-            <Badge variant="light" color="orange">
+            <Badge variant="light" color="gray">
               TypeScript
             </Badge>
-            <Badge variant="light" color="orange">
+            <Badge variant="light" color="gray">
               Linux
             </Badge>
           </Group>
@@ -156,7 +156,7 @@ const Projects = () => {
 
           <Button
             variant="light"
-            color="orange"
+            color="gray"
             fullWidth
             mt="md"
             radius="md"
@@ -169,7 +169,7 @@ const Projects = () => {
           </Button>
           <Button
             variant="light"
-            color="orange"
+            color="gray"
             fullWidth
             mt="md"
             radius="md"
@@ -191,27 +191,27 @@ const Projects = () => {
         >
           <Group justify="center">
             <img
-              src={"/image/spring.webp"}
+              src={"/image/beacon.ico"}
               className={classes.projectImage}
               alt="spring"
             />
           </Group>
           <Group justify="space-between" mt="md" mb="xs">
-            <Text fw={500} mt="xs" mb="xs">MiniMarket | 2021</Text>
-            <Badge color="green">FINISHED</Badge>
+            <Text fw={500} mt="xs" mb="xs">Beacon</Text>
+            <Badge color="gray">FINISHED</Badge>
           </Group>
           <Group mt="md" mb="xl">
-            <Badge variant="light" color="orange">
-              Java
+            <Badge variant="light" color="gray">
+              NextJS
             </Badge>
-            <Badge variant="light" color="orange">
-              Spring
+            <Badge variant="light" color="gray">
+              Mantine
             </Badge>
-            <Badge variant="light" color="orange">
-              GRADLE
+            <Badge variant="light" color="gray">
+              TypeScript
             </Badge>
-            <Badge variant="light" color="orange">
-              INTELLIJ IDEA
+            <Badge variant="light" color="gray">
+              Vercel
             </Badge>
           </Group>
           <Spoiler maxHeight={152} showLabel="Show more" hideLabel="Hide">
@@ -232,7 +232,7 @@ const Projects = () => {
           </Spoiler>
           <Button
             variant="light"
-            color="orange"
+            color="gray"
             fullWidth
             mt="md"
             radius="md"
@@ -261,26 +261,26 @@ const Projects = () => {
           </Group>
           <Group justify="space-between" mt="md" mb="xs" >
             <Text fw={500} mt="xs" mb="xs">ATO Web | 2019</Text>
-            <Badge color="green">FINISHED</Badge>
+            <Badge color="gray">FINISHED</Badge>
           </Group>
           <Group mt="md" mb="xl">
-            <Badge variant="light" color="orange">
+            <Badge variant="light" color="gray">
               HTML
             </Badge>
-            <Badge variant="light" color="orange">
+            <Badge variant="light" color="gray">
               CSS
             </Badge>
-            <Badge variant="light" color="orange">
+            <Badge variant="light" color="gray">
               JavaScript
             </Badge>
-            <Badge variant="light" color="orange">
+            <Badge variant="light" color="gray">
               BootStrap
             </Badge>
           </Group>
 
           <Spoiler maxHeight={100} showLabel="Show more" hideLabel="Hide">
             <Text size="sm" c="dimmed">
-              The ATO is the Tolimense Association of Orchidology, an
+              The ATO is the Tograynse Association of Orchidology, an
               organization dedicated to the study, dissemination, preservation,
               and in-situ management of orchids found in the Tolima department
               of Colombia. Their work includes the publication of the ATO
@@ -293,7 +293,7 @@ const Projects = () => {
 
           <Button
             variant="light"
-            color="orange"
+            color="gray"
             fullWidth
             mt="md"
             radius="md"
@@ -306,7 +306,7 @@ const Projects = () => {
           </Button>
           <Button
             variant="light"
-            color="orange"
+            color="gray"
             fullWidth
             mt="md"
             radius="md"

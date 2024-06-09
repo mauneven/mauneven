@@ -5,12 +5,12 @@ import classes from "../../../public/css/me/FirstImpression.module.css";
 const Skills = () => {
   return (
     <Stack justify="center" align="center" style={{ minHeight: "100vh" }}>
-      <Title c={"yellow"} className={classes.titleDeveloper}>
+      <Title c={"gray"} className={classes.titleDeveloper}>
         Skills & Stacks
       </Title>
       <Group maw={900} justify="center" mt={40}>
         <Paper shadow="xs" p={"lg"} withBorder>
-          <Title c={"orange"} size={"h2"} ta={"center"}>
+          <Title c={"gray"} size={"h2"} ta={"center"}>
             Languages
           </Title>
           <Group gap={20} mt={20} maw={240} justify="center">
@@ -45,7 +45,7 @@ const Skills = () => {
           </Group>
         </Paper>
         <Paper shadow="xs" p={"lg"} withBorder>
-          <Title c={"green"} size={"h2"} ta={"center"}>
+          <Title c={"gray"} size={"h2"} ta={"center"}>
             Backend
           </Title>
           <Group gap={20} mt={20} maw={240} justify="center">
@@ -84,7 +84,7 @@ const Skills = () => {
           </Group>
         </Paper>
         <Paper shadow="xs" p={"lg"} withBorder>
-          <Title c={"blue"} size={"h2"} ta={"center"}>
+          <Title c={"gray"} size={"h2"} ta={"center"}>
             Frontend
           </Title>
           <Group gap={20} mt={20} maw={240} justify="center">
@@ -112,7 +112,7 @@ const Skills = () => {
           </Group>
         </Paper>
         <Paper shadow="xs" p={"lg"} withBorder>
-          <Title c={"violet"} size={"h2"} ta={"center"}>
+          <Title c={"gray"} size={"h2"} ta={"center"}>
             DataBase
           </Title>
           <Group gap={20} mt={20} maw={240} justify="center">
@@ -141,7 +141,7 @@ const Skills = () => {
           </Group>
         </Paper>
         <Paper shadow="xs" p={"lg"} withBorder>
-          <Title c={"pink"} size={"h2"} ta={"center"}>
+          <Title c={"gray"} size={"h2"} ta={"center"}>
             Cloud
           </Title>
           <Group gap={20} mt={20} maw={240} justify="center">
@@ -178,7 +178,7 @@ const Skills = () => {
           </Group>
         </Paper>
         <Paper shadow="xs" p={"lg"} withBorder>
-          <Title c={"red"} size={"h2"} ta={"center"}>
+          <Title c={"gray"} size={"h2"} ta={"center"}>
             Tools
           </Title>
           <Group gap={20} mt={20} maw={240} justify="center">

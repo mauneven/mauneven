@@ -12,12 +12,12 @@ import {
 const Social = () => {
   return (
     <Stack justify="center" align="center" style={{ minHeight: "100vh" }}>
-      <Title ta={"center"} c={"yellow"} className={classes.titleDeveloper}>
+      <Title ta={"center"} c={"gray"} className={classes.titleDeveloper}>
         Social
       </Title>
       <Group maw={400} justify="center" align="center" gap={40} mt={40}>
         <Button
-          color="yellow"
+          color="gray"
           leftSection={<IconBrandLinkedin />}
           variant="light"
           component="a"
@@ -27,7 +27,7 @@ const Social = () => {
           Linkedin
         </Button>
         <Button
-          color="yellow"
+          color="gray"
           leftSection={<IconBrandX />}
           variant="light"
           component="a"
@@ -37,7 +37,7 @@ const Social = () => {
           Twitter / X
         </Button>
         <Button
-          color="yellow"
+          color="gray"
           leftSection={<IconBrandTelegram />}
           variant="light"
           component="a"
@@ -47,7 +47,7 @@ const Social = () => {
           Telegram
         </Button>
         <Button
-          color="yellow"
+          color="gray"
           leftSection={<IconBrandSpotify />}
           variant="light"
           component="a"
@@ -57,7 +57,7 @@ const Social = () => {
           Spotify
         </Button>
         <Button
-          color="yellow"
+          color="gray"
           leftSection={<IconBrandGithub />}
           variant="light"
           component="a"

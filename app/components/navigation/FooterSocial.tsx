@@ -1,12 +1,22 @@
-import { Container, Group, ActionIcon, rem, Text } from "@mantine/core";
+"use client";
+import { Container, Group, ActionIcon, rem, Text, Button } from "@mantine/core";
 import { IconBrandLinkedin, IconBrandGithub } from "@tabler/icons-react";
 import classes from "../../../public/css/navigation/FooterSocial.module.css";
+import { useRouter } from "next/navigation";
 
 export function FooterSocial() {
+  const router = useRouter();
+
   return (
     <div className={classes.footer}>
       <Container className={classes.inner}>
-        <Text>Mauneven</Text>
+        <Button
+          variant="subtle"
+          color={"gray"}
+          onClick={() => router.push("/")}
+        >
+          Mauneven
+        </Button>
         <Group
           gap={0}
           className={classes.links}

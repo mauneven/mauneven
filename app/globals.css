@@ -3,4 +3,5 @@ body {
   --background-primary-light: white;
   --text-primary-dark: white;
   --text-primary-light: black;
+  --select: #c9c9c954;
 }
