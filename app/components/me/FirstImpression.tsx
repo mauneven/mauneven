@@ -11,13 +11,6 @@ import {
 } from "@tabler/icons-react";
 
 const FirstImpression = () => {
-  const handleScrollDown = () => {
-    window.scrollTo({
-      top: window.innerHeight * 1,
-      behavior: "smooth",
-    });
-  };
-
   return (
     <Stack justify="center" align="center">
       <Text mb={0} c={"gray"} className={classes.titleDeveloper}>
@@ -79,7 +72,9 @@ const FirstImpression = () => {
         </Stack>
       </Stack>
       <Flex align="center" justify="center" wrap="wrap" gap={50}>
-        <img src={"/image/me.jpg"} className={classes.profileImage} alt={""} />
+        <a target="_blank" href="https://www.tumblr.com/mauneven" className={classes.profileImageContainer}>
+          <img src={"/image/me.jpg"} className={classes.profileImage} alt="Profile" />
+        </a>
         <Paper shadow="xl" radius="md" p="xl" maw={300} withBorder>
           <Text className={classes.infoText}>
             Developing software isn&apos;t just about coding; it&apos;s about

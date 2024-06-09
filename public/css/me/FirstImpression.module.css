@@ -1,40 +1,65 @@
-.titleDeveloper{
-    font-size: 230%;
-    font-weight: 700;
+.titleDeveloper {
+  font-size: 230%;
+  font-weight: 700;
 }
 
-.titleName{
-    font-size: 230%;
-    font-weight: 700;
+.titleName {
+  font-size: 230%;
+  font-weight: 700;
 }
 
-.infoText{
-    font-size: 100%;
-    font-weight: 600;
+.infoText {
+  font-size: 100%;
+  font-weight: 600;
 }
 
-.icon{
-    size: 500%;
+.icon {
+  size: 500%;
 }
 
-.profileImage{
-    width: calc(10vw + 110px);
-    height: calc(10vw + 110px);
-    object-fit: cover;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid light-dark(rgb(47, 47, 47), rgb(194, 194, 194));
+.profileImage {
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+  width: calc(10vw + 110px);
+  height: calc(10vw + 110px);
+  object-fit: cover;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid light-dark(rgb(47, 47, 47), rgb(194, 194, 194));
 }
 
-.iconImage{
-    width: 80px;
-    height: 80px;
-    display: flex;
-    object-fit: cover;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+.profileImage:hover {
+  filter: grayscale(0%);
+}
+
+.profileImageContainer {
+  cursor: pointer;
+}
+
+.iconImage {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+}
+
+.awsImage {
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+}
+
+.iconImage:hover {
+  filter: grayscale(0%);
+}
+
+.awsImage:hover {
+  filter: grayscale(0%);
 }

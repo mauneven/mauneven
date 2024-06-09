@@ -2,12 +2,6 @@
 import React from "react";
 import {
   Group,
-  Burger,
-  Drawer,
-  ScrollArea,
-  Divider,
-  rem,
-  Stack,
   Container,
   Button,
 } from "@mantine/core";
@@ -44,13 +38,6 @@ export function HeaderMenu() {
             onClick={() => router.push("/about")}
           >
             About
-          </Button>
-          <Button
-            variant="subtle"
-            color="gray"
-            onClick={() => router.push("/social")}
-          >
-            Social
           </Button>
         </Group>
       </Container>
