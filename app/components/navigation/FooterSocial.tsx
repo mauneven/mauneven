@@ -100,7 +100,7 @@ export function FooterSocial() {
             color="gray"
             variant="subtle"
             component="a"
-            href="https://twitter.com/maoneven"
+            href="https://tumblr.com/mauneven"
             target="_blank"
           >
             <IconBrandTumblr

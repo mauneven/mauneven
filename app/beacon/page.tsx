@@ -2,7 +2,7 @@ import { Group, Paper, Stack, Text, Button } from "@mantine/core";
 import { IconExternalLink } from "@tabler/icons-react";
 import React from "react";
 
-const page = () => {
+const Page = () => {
   return (
     <Group justify="center" align="center">
       <Paper withBorder shadow="xl" p={"xl"}>
@@ -71,8 +71,7 @@ const page = () => {
             the reminders. Even the simplest ideas are complicated. I found a
             system tray that worked on Windows, but only for Windows. For that,
             I wouldn&apos;t have used Flutter; I would have gone directly with
-            something more native to Windows, with Fluent
-            2 design.
+            something more native to Windows, with Fluent 2 design.
           </Text>
           <Text size="xl" fw={600}>
             Using C# to create an app with Fluent 2 was a horrible experience
@@ -115,4 +114,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
