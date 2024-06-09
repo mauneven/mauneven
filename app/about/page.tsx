@@ -4,23 +4,16 @@ import Experience from "../components/me/Experience";
 import Projects from "../components/me/Projects";
 import Skills from "../components/me/Skills";
 import EducationAndCertifications from "../components/me/EducationAndCertifications";
+import { Stack } from "@mantine/core";
 
 const page = () => {
   return (
-    <div>
-      <div id="home">
+    <Stack gap={40}>
         <FirstImpression />
-      </div>
-      <div id="experience">
         <Experience />
-      </div>
-      <div id="skills">
         <Skills />
-      </div>
-      <div id="education">
         <EducationAndCertifications />
-      </div>
-    </div>
+    </Stack>
   );
 };
 

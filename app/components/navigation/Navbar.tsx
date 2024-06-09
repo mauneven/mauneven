@@ -23,6 +23,7 @@ export function HeaderMenu() {
   const router = useRouter();
 
   return (
+    <Group mb={100}>
     <header className={classes.header}>
       <Container className={classes.inner}>
         <Group justify="space-between">
@@ -54,5 +55,6 @@ export function HeaderMenu() {
         </Group>
       </Container>
     </header>
+    </Group>
   );
 }

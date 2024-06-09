@@ -25,10 +25,7 @@ const Page = () => {
 
   const elements = [
     { date: "∞", title: "Want, the hardest one", category: "App", url: "/want" },
-    { date: "2024", title: "idgaf about front vs back", category: "Opinion", url: "/event-3" },
-    { date: "", title: "Beacon Reminders", category: "App", url: "/beacon" },
-    { date: "", title: "The Airlines are really amazing", category: "Work", url: "/airlines" },
-    { date: "2023", title: "Ai is not always cool", category: "Opinion", url: "/ai-is-not-always-cool" },
+    { date: "2024", title: "Beacon", category: "App", url: "/beacon" },
   ];
 
   const handleRowClick = (url: string) => {
@@ -50,7 +47,7 @@ const Page = () => {
   ));
 
   return (
-    <Stack bg="var(--mantine-color-body)" gap="xl" justify="center" align="center" style={{ minHeight: "100vh" }}>
+    <Stack bg="var(--mantine-color-body)" gap="xl" justify="center" align="center" style={{ minHeight: "80vh" }}>
       <Group>
         <Table>
           <Table.Thead>

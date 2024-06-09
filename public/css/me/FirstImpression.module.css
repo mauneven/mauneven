@@ -38,15 +38,3 @@
     margin: 0;
     padding: 0;
 }
-
-@media(max-width: 580px){
-    .titleDeveloper{
-        margin-top: 60px;
-    }
-}
-
-@media(max-width: 1376px){
-    .titleDeveloper{
-        margin-top: 60px;
-    }
-}

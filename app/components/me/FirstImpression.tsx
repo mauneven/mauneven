@@ -4,7 +4,6 @@ import { Badge, Button, Flex, Group, Paper, Stack, Text } from "@mantine/core";
 import React from "react";
 import classes from "../../../public/css/me/FirstImpression.module.css";
 import {
-  IconArrowDown,
   IconBrandGithub,
   IconBrandLinkedin,
   IconBriefcase,
@@ -20,17 +19,15 @@ const FirstImpression = () => {
   };
 
   return (
-    <Stack
-      justify="center"
-      align="center"
-      style={{ minHeight: "100vh" }}
-    >
-      <Text  mb={0} c={"gray"} className={classes.titleDeveloper}>
+    <Stack justify="center" align="center">
+      <Text mb={0} c={"gray"} className={classes.titleDeveloper}>
         About
       </Text>
       <Stack justify="center" align="center" gap={20}>
         <Stack gap={2}>
-          <Text ta={"center"} className={classes.titleName}>Mauricio Pulido</Text>
+          <Text ta={"center"} className={classes.titleName}>
+            Mauricio Pulido
+          </Text>
           <Text ta={"center"} size="xl" fw={600} mb={10}>
             Software Developer
           </Text>
@@ -94,14 +91,6 @@ const FirstImpression = () => {
           </Text>
         </Paper>
       </Flex>
-      <Button
-        color="gray"
-        variant="light"
-        radius={"md"}
-        onClick={handleScrollDown}
-      >
-        <IconArrowDown />
-      </Button>
     </Stack>
   );
 };

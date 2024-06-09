@@ -11,7 +11,7 @@ import {
 
 const Social = () => {
   return (
-    <Stack justify="center" align="center" style={{ minHeight: "100vh" }}>
+    <Stack justify="center" align="center">
       <Title ta={"center"} c={"gray"} className={classes.titleDeveloper}>
         Social
       </Title>
