@@ -19,47 +19,60 @@ const Page = () => {
           <Group align="center">
             <Group className={styles.link} onClick={handleClick}>
               <Group className={styles["link-group"]}>
-                <Title>Beacon</Title>
+                <Title>CASSIE</Title>
                 <IconExternalLink size={40} />
                 <div className={styles["underline-hover"]}></div>
               </Group>
             </Group>
           </Group>
           <Text size="xl" fw={600}>
-            The idea of creating this app
+            Que es CASSIE?
           </Text>
           <Text>
-            Beacon is a web app today (2024). It works, but not as I would like.
-            The project is basically a reminder of healthy habits. It reminds
-            you to sit properly, drink water, stretch your legs, relax your
-            eyes, sit properly, etc. These are healthy things that are great for
-            us who spend a lot of time on the computer because at any moment
-            during those long 8-hour days or more, you can lose the good habit
-            of doing everything right. Having non-intrusive reminders from time
-            to time is great.
+            CASSIE o Code Analysis System for Software Intelligence and
+            Enhancement por su nombre real, es un modelo de lenguaje natural que
+            utilizaba como base el repositorio publico de GPT-2 de 124 millones
+            de parametros, fue creado en abril del 2023 cuando recientemente
+            openai habia expuesto el tokenizador y el HeadModel de GPT-2, usaba
+            un modelo preentrenado, la idea fue enfocarlo al analsis de codigo
+            para indentificar problemas o explicar cosas sin tener que
+            investigar en la documentacion.
           </Text>
           <Text size="xl" fw={600}>
-            But this idea wasn&apos;t mine
+            Los LLM son posiblemente la tecnologia mas dificil de entender al
+            completo exceptuando la litografía de procesadores
           </Text>
           <Text>
-            Beacon isn&apos;t my idea. In fact, back in 2018 and 2019, I used
-            Linux, and I loved a distribution called elementary OS. It had a
-            store where I found exactly that app called Badger. This app was
-            basically the same as Beacon but running locally because it was a
-            program written in Vala. With the iconic design that elementary had,
-            it looked beautiful. It was a simple app and it worked. I loved it
-            so much that it hurt when I went to Windows and couldn&apos;t have
-            it. But at that time, my development knowledge was low and, even
-            more importantly, I like apps that look nice, and I didn&apos;t have
-            the skill to develop this app on Windows with that beautiful design.
+            Todos lo saben, los LLM usan redes neuronales y un banco de
+            informacion masivo para poder funcionar, la teoria es simple pero
+            nunca nos lleva lejos, porque cuando creemos que entendemos algo
+            solo por la teoria es entonces cuando nos damos cuenta de que no
+            sabemos una mierda, el proceso de tokenizacion, codificacion,
+            antencion y decodificacion es algo extremadamente complejo, el
+            modelo practicamente solo habla matematicas y traduce toda la
+            informacion en un proceso que es extremadamente complicado,
+            basicamente las palabras que enviamos se tokenizan (se transforman
+            de "Once upon a time" a ["Once", "upon", "a", "time"]), estos tokens
+            despues se convierten en vectores matematicos de alta dimension y
+            los vectores matematicos se operan con la arquitectura transformer
+            que creo google hace mucho, este es basicamente una calculadora,
+            estas operaciones responden con informacion vectoria y se
+            destokenizan o se decodifican para traducirlas al lenguaje del ser
+            humano.
           </Text>
           <Text size="xl" fw={600}>
-            So I started the development in 2024
+            Por que crear cassie?
           </Text>
           <Text>
-            I tried to go with something cross-platform at first, so the options
-            were Electron or Flutter among my current knowledge. I preferred to
-            use Flutter because it had more options to create prettier designs.
+            bueno, era el boom de la IA, y veia que todo el mundo de golpe se
+            convirtio en expertos de IA, asi como los crypto bros se volvieron
+            expertos en la blockchain en un curso de 0 a experto en 1 semana
+            (obviamente esto es falso, los idiotas solo entendian la teoria),
+            entonces pense, esta tecnologia debe ser dificil pero no tan
+            complicada de entender, bruh, ojala nunca haber pensado eso, cuando
+            empece a desarrollar a cassie me di cuenta de lo JODIDO que eran los
+            modelos de lenguaje, y de lo increiblemente lleno que estaba de
+            informacion internet para poder entenderla
           </Text>
           <Text size="xl" fw={600}>
             Problems with cross-platform

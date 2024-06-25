@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Group, Stack, Table } from "@mantine/core";
+import { Group, Paper, Stack, Table } from "@mantine/core";
 import { useRouter } from "next/navigation";
 
 const Page = () => {
@@ -14,7 +14,8 @@ const Page = () => {
       category: "App",
       url: "/want",
     },
-    { date: "2024", title: "Beacon", category: "App", url: "/beacon" },
+    { date: "2024", title: "Beacon Reminders", category: "App", url: "/beacon" },
+    { date: "2023", title: "Cassie", category: "Ai", url: "/cassie" },
   ];
 
   const handleRowClick = (url: string) => {
@@ -50,9 +51,9 @@ const Page = () => {
         gap="xl"
         justify="center"
         align="center"
-        style={{ minHeight: "80vh" }}
+        style={{ minHeight: "77vh" }}
       >
-        <Group>
+        <Paper withBorder radius={"xs"} p={0} shadow="xl">
           <Table>
             <Table.Thead>
               <Table.Tr>
@@ -63,7 +64,7 @@ const Page = () => {
             </Table.Thead>
             <Table.Tbody>{rows}</Table.Tbody>
           </Table>
-        </Group>
+        </Paper>
       </Stack>
     </>
   );
