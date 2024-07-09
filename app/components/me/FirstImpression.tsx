@@ -1,96 +1,104 @@
 "use client";
 
-import { Badge, Button, Flex, Group, Paper, Stack, Text } from "@mantine/core";
+import { Badge, Button, Group, Image, Stack, Text, Title } from "@mantine/core";
 import React from "react";
 import classes from "../../../public/css/me/FirstImpression.module.css";
 import {
   IconBrandGithub,
   IconBrandLinkedin,
   IconBriefcase,
+  IconMail,
   IconWorldPin,
 } from "@tabler/icons-react";
 
 const FirstImpression = () => {
   return (
-    <Stack justify="center" align="center">
-      <Stack justify="center" align="center" gap={20}>
-        <Stack gap={2}>
-          <Text ta={"center"} className={classes.titleName}>
-            Mauricio Pulido
-          </Text>
-          <Text ta={"center"} size="xl" fw={600} mb={10}>
-            Software Developer
-          </Text>
-        </Stack>
+    <Stack gap={40}>
+      <Group>
+        <Group justify="start" align="center" gap={10}>
+          <a
+            target="_blank"
+            href="https://t.me/mauneven"
+            className={classes.profileImageContainer}
+          >
+            <Image
+              src={"/image/me.jpg"}
+              className={classes.profileImage}
+              alt="Profile"
+              maw={70}
+              mah={70}
+            />
+          </a>
+          <Stack gap={0}>
+            <Title ta={"left"} size={35}>
+              Mauricio Pulido
+            </Title>
+            <Group justify="center" wrap="wrap-reverse" gap={20}>
+              <Badge
+                size="lg"
+                color="yellow"
+                variant="light"
+                leftSection={<IconWorldPin size={20} />}
+              >
+                Colombia
+              </Badge>
+              <Badge
+                size="lg"
+                color="yellow"
+                variant="light"
+                leftSection={<IconBriefcase size={20} />}
+              >
+                Be Bolder
+              </Badge>
+            </Group>
+          </Stack>
+        </Group>
+      </Group>
 
-        <Stack justify="center" gap={20}>
-          <Group justify="center" gap={20}>
-            <Button
-              variant="light"
-              color="gray"
-              radius={"md"}
-              leftSection={<IconBrandLinkedin />}
-              component="a"
-              href="https://www.linkedin.com/in/mauneven/"
-              target="_blank"
-            >
-              LinkedIn
-            </Button>
-            <Button
-              variant="light"
-              color="gray"
-              radius={"md"}
-              leftSection={<IconBrandGithub />}
-              component="a"
-              href="https://github.com/mauneven"
-              target="_blank"
-            >
-              GitHub
-            </Button>
-          </Group>
-          <Group justify="space-between" wrap="wrap-reverse">
-            <Badge
-              size="xl"
-              color="gray"
-              variant="light"
-              leftSection={<IconWorldPin />}
-            >
-              Colombia
-            </Badge>
-            <Badge
-              size="xl"
-              color="gray"
-              variant="light"
-              leftSection={<IconBriefcase />}
-            >
-              Be Bolder
-            </Badge>
-          </Group>
-        </Stack>
-      </Stack>
-      <Flex mt={40} align="center" justify="center" wrap="wrap" gap={50}>
-        <a
+      <Text fw={600} maw={650} size="lg">
+        +4 years of experience. Full-Stack Software Developer creating
+        high-quality services used by{" "}
+        <Text fw={700} span c="yellow" inherit>
+          millions of users
+        </Text>{" "}
+        annually. Originally from Colombia. Linux/GNU and Open Source lover.
+      </Text>
+
+      <Group gap={20}>
+        <Button
+          variant="light"
+          color="gray"
+          radius={"md"}
+          leftSection={<IconBrandLinkedin />}
+          component="a"
+          href="https://www.linkedin.com/in/mauneven/"
           target="_blank"
-          href="https://www.tumblr.com/mauneven"
-          className={classes.profileImageContainer}
         >
-          <img
-            src={"/image/me.jpg"}
-            className={classes.profileImage}
-            alt="Profile"
-          />
-        </a>
-        <Paper shadow="xl" radius="md" p="xl" maw={300} withBorder>
-          <Text className={classes.infoText}>
-            Developing software isn&apos;t just about coding; it&apos;s about
-            understanding the business and environment you&apos;re in, to bring
-            solutions to the problems faced by the people within it,{" "}
-            <Text span c="gray" inherit>
-              creating something people want.
-            </Text>
-          </Text>
-        </Paper>
-      </Flex>
+          LinkedIn
+        </Button>
+        <Button
+          variant="light"
+          color="gray"
+          radius={"md"}
+          leftSection={<IconBrandGithub />}
+          component="a"
+          href="https://github.com/mauneven"
+          target="_blank"
+        >
+          GitHub
+        </Button>
+        <Button
+          variant="light"
+          color="gray"
+          radius={"md"}
+          leftSection={<IconMail />}
+          component="a"
+          href="mailto:mauneven@gmail.com?subject=Hey%2C%20Mauricio&body=Write%20here"
+          target="_blank"
+        >
+          Mail
+        </Button>
+      </Group>
     </Stack>
   );
 };

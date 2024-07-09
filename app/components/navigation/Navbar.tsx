@@ -5,14 +5,11 @@ import {
   Container,
   Button,
 } from "@mantine/core";
-import { useDisclosure } from "@mantine/hooks";
 import classes from "../../../public/css/navigation/HeaderMenu.module.css";
 import ThemeChanger from "../themes/ThemeChanger";
 import { useRouter } from "next/navigation";
 
 export function HeaderMenu() {
-  const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] =
-    useDisclosure(false);
 
   const router = useRouter();
 

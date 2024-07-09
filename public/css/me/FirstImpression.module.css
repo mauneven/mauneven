@@ -18,8 +18,6 @@
 }
 
 .profileImage {
-  filter: grayscale(100%);
-  transition: filter 0.5s ease;
   width: calc(10vw + 110px);
   height: calc(10vw + 110px);
   object-fit: cover;
@@ -27,7 +25,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 5px solid light-dark(rgb(47, 47, 47), rgb(194, 194, 194));
 }
 
 .profileImage:hover {
@@ -47,19 +44,32 @@
   align-items: center;
   margin: 0;
   padding: 0;
-  filter: grayscale(100%);
   transition: filter 0.5s ease;
 }
 
-.awsImage {
-  filter: grayscale(100%);
-  transition: filter 0.5s ease;
+.link {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
 }
 
-.iconImage:hover {
-  filter: grayscale(0%);
+.link-group {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
 }
 
-.awsImage:hover {
-  filter: grayscale(0%);
+.underline-hover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: currentColor;
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+.link-group:hover .underline-hover {
+  opacity: 1;
 }

@@ -56,7 +56,7 @@ export default function RootLayout({
           defaultColorScheme="dark"
         >
           <HeaderMenu />
-          <Container fluid>{children}</Container>
+          <Container>{children}</Container>
           <FooterSocial />
           {!isMobileWithLowResolution && (
             <Affix position={{ bottom: 30, right: 20 }}>

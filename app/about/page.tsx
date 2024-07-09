@@ -7,11 +7,11 @@ import { Stack } from "@mantine/core";
 
 const page = () => {
   return (
-    <Stack gap={40}>
-        <FirstImpression />
-        <Experience />
-        <Skills />
-        <EducationAndCertifications />
+    <Stack gap={60}>
+      <FirstImpression />
+      <Experience />
+      <Skills />
+      <EducationAndCertifications />
     </Stack>
   );
 };

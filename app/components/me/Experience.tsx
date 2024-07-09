@@ -3,88 +3,185 @@
 import { Stack, Title, Timeline, Text, Group, Badge } from "@mantine/core";
 import React from "react";
 import classes from "../../../public/css/me/FirstImpression.module.css";
+import {
+  IconPencil,
+  IconPlaneDeparture,
+  IconShoppingBag,
+} from "@tabler/icons-react";
 
 const Experience = () => {
   return (
-    <Stack mb={50} gap={30} justify="center" align="center" style={{ minHeight: "100vh" }}>
-      <Text c={"gray"} className={classes.titleDeveloper}>Experience</Text>
-      <Timeline color="gray" active={3} bulletSize={50} lineWidth={4}>
-        <Timeline.Item>
-          <Title pt={0} mt={0}>
+    <Stack gap={30}>
+      <Text className={classes.titleDeveloper}>Experience</Text>
+      <Timeline color="yellow" active={3} bulletSize={35} lineWidth={2}>
+        <Timeline.Item bullet={<IconPlaneDeparture />}>
+          <Title size={25} c={"yellow"} pt={0} mt={0}>
             FullStack Software Developer
           </Title>
-          <Text size="xl" mt={20} mb={20}>
-            BeBolder - Airlines Industry 
+          <Text fw={700} mt={5}>
+            BeBolder - Dec, 2022
           </Text>
-          <Group maw={800}>
-            <Badge size="lg" color="gray" variant="light">Spring</Badge>
-            <Badge size="lg" color="gray" variant="light">React (NextJS)</Badge>
-            <Badge size="lg" color="gray" variant="light">Angular</Badge>
-            <Badge size="lg" color="gray" variant="light">MySQL</Badge>
-            <Badge size="lg" color="gray" variant="light">PostgreSQL</Badge>
-            <Badge size="lg" color="gray" variant="light">Docker</Badge>
-            <Badge size="lg" color="gray" variant="light">Kubernetes</Badge>
-            <Badge size="lg" color="gray" variant="light">Google Cloud (GCP)</Badge>
-            <Badge size="lg" color="gray" variant="light">Microservices</Badge>
-            <Badge size="lg" color="gray" variant="light">Nginx</Badge>
-            <Badge size="lg" color="gray" variant="light">Rest</Badge>
-            <Badge size="lg" color="gray" variant="light">Jira</Badge>
-            <Badge size="lg" color="gray" variant="light">Scrum</Badge>
+          <Text fw={600} mt={5}>
+            I collaborate and develop with professional agile teams for the
+            creation and modification of functionality in front-end, back-end,
+            databases, and DevOps for airline services like Wingo,{" "}
+            <Text
+              href="https://latinamericanpost.com/business-and-finance/colombias-wingos-phenomenal-passenger-growth-in-2023/"
+              component="a"
+              target="_blank"
+              td="underline"
+              inherit
+            >
+              with over 3.3 million sales in 2023
+            </Text>
+            . Improving load speeds on requests, modifying logic, and creating
+            new functionalities and services.
+          </Text>
+          <Group mt={10}>
+            <Badge size="md" color="gray" variant="light">
+              Spring
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              React (NextJS)
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              Angular
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              MySQL
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              PostgreSQL
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              Docker
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              Kubernetes
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              Google Cloud (GCP)
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              Microservices
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              Nginx
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              Rest
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              Jira
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              Scrum
+            </Badge>
           </Group>
-          <Text size="sm" mt={20} mb={20}>
-            Dec, 2022 - Present
-          </Text>
         </Timeline.Item>
 
-        <Timeline.Item>
-          <Title pt={0} mt={0}>
-            Web & Mobile Developer
+        <Timeline.Item bullet={<IconShoppingBag />}>
+          <Title size={25} c={"yellow"} pt={0} mt={0}>
+            Lead Developer and Director
           </Title>
-          <Text size="xl" mt={20} mb={20}>
-            Want - Inverse E-commerce
+          <Text fw={700} mt={5}>
+            Want - Jan, 2020
           </Text>
-          <Group maw={800}>
-            <Badge size="lg" color="gray" variant="light">Spring</Badge>
-            <Badge size="lg" color="gray" variant="light">NodeJS</Badge>
-            <Badge size="lg" color="gray" variant="light">NextJS</Badge>
-            <Badge size="lg" color="gray" variant="light">React Native (EXPO)</Badge>
-            <Badge size="lg" color="gray" variant="light">MongoDB</Badge>
-            <Badge size="lg" color="gray" variant="light">ATLAS</Badge>
-            <Badge size="lg" color="gray" variant="light">Docker</Badge>
-            <Badge size="lg" color="gray" variant="light">Microservices</Badge>
-            <Badge size="lg" color="gray" variant="light">AWS</Badge>
-            <Badge size="lg" color="gray" variant="light">Nginx</Badge>
-            <Badge size="lg" color="gray" variant="light">Rest</Badge>
-            <Badge size="lg" color="gray" variant="light">GraphQL (Apollo Server)</Badge>
-            <Badge size="lg" color="gray" variant="light">Notion</Badge>
-            <Badge size="lg" color="gray" variant="light">Scrumban</Badge>
+          <Text fw={600} mt={5}>
+            I founded and developed a startup with the intention of creating an
+            online platform where users can post their needs in a single post,
+            and businesses and sellers can offer the best deals, reversing
+            traditional online commerce. I led a team of developers, driving
+            innovation and effective solutions.
+          </Text>
+          <Group mt={10}>
+            <Badge size="md" color="gray" variant="light">
+              Spring
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              NodeJS
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              NextJS
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              React Native (EXPO)
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              MongoDB
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              ATLAS
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              Docker
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              Microservices
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              AWS
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              Nginx
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              Rest
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              GraphQL (Apollo Server)
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              Notion
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              Scrumban
+            </Badge>
           </Group>
-          <Text size="sm" mt={20} mb={20}>
-            2020 - 2022
-          </Text>
         </Timeline.Item>
 
-        <Timeline.Item>
-          <Title pt={0} mt={0}>
+        <Timeline.Item bullet={<IconPencil />}>
+          <Title size={25} c={"yellow"} pt={0} mt={0}>
             FreeLancer Developer
           </Title>
-          <Text size="xl" mt={20} mb={20}>
-            Personal - Multiple categories (E-commerce, Blogs, Concert management)
+          <Text fw={700} mt={5}>
+            Various Customers - Jan, 2017 to Dec, 2020
           </Text>
-          <Group maw={800}>
-            <Badge size="lg" color="gray" variant="light">Java</Badge>
-            <Badge size="lg" color="gray" variant="light">Python</Badge>
-            <Badge size="lg" color="gray" variant="light">JavaScript</Badge>
-            <Badge size="lg" color="gray" variant="light">HTML</Badge>
-            <Badge size="lg" color="gray" variant="light">CSS</Badge>
-            <Badge size="lg" color="gray" variant="light">React</Badge>
-            <Badge size="lg" color="gray" variant="light">MySQL</Badge>
-            <Badge size="lg" color="gray" variant="light">Netlify</Badge>
-            <Badge size="lg" color="gray" variant="light">Github Pages</Badge>
+          <Text fw={600} mt={5}>
+            I developed and created multiple independent projects, such as
+            building blogs, managing concert ticketing, and presentation
+            websites for public associations. During these projects, I learned
+            Java, JavaScript, TypeScript, Spring, Angular, and React (NextJS).
+          </Text>
+          <Group mt={10} mb={0}>
+            <Badge size="md" color="gray" variant="light">
+              Java
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              Python
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              JavaScript
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              HTML
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              CSS
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              React
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              MySQL
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              Netlify
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              Github Pages
+            </Badge>
           </Group>
-          <Text size="sm" mt={20} mb={20}>
-            2017 - 2020
-          </Text>
         </Timeline.Item>
       </Timeline>
     </Stack>
