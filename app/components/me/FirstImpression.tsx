@@ -13,9 +13,6 @@ import {
 const FirstImpression = () => {
   return (
     <Stack justify="center" align="center">
-      <Text mb={0} c={"gray"} className={classes.titleDeveloper}>
-        About
-      </Text>
       <Stack justify="center" align="center" gap={20}>
         <Stack gap={2}>
           <Text ta={"center"} className={classes.titleName}>
@@ -71,9 +68,17 @@ const FirstImpression = () => {
           </Group>
         </Stack>
       </Stack>
-      <Flex align="center" justify="center" wrap="wrap" gap={50}>
-        <a target="_blank" href="https://www.tumblr.com/mauneven" className={classes.profileImageContainer}>
-          <img src={"/image/me.jpg"} className={classes.profileImage} alt="Profile" />
+      <Flex mt={40} align="center" justify="center" wrap="wrap" gap={50}>
+        <a
+          target="_blank"
+          href="https://www.tumblr.com/mauneven"
+          className={classes.profileImageContainer}
+        >
+          <img
+            src={"/image/me.jpg"}
+            className={classes.profileImage}
+            alt="Profile"
+          />
         </a>
         <Paper shadow="xl" radius="md" p="xl" maw={300} withBorder>
           <Text className={classes.infoText}>
