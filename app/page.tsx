@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Group, Paper, Stack, Table } from "@mantine/core";
+import { Paper, Stack, Table } from "@mantine/core";
 import { useRouter } from "next/navigation";
 
 const Page = () => {

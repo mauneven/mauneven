@@ -1,15 +1,35 @@
+"use client";
 import { Group, Paper, Stack, Title, Text } from "@mantine/core";
 import React from "react";
+import styles from "./css/Page.module.css";
+import { IconExternalLink } from "@tabler/icons-react";
 
 const page = () => {
+
+  const handleClick = () => {
+    window.open(
+      "https://github.com/mauneven/want",
+      "_blank",
+      "noopener,noreferrer"
+    );
+  };
+
   return (
     <Group justify="center" align="center">
       <Paper withBorder shadow="xl" p={"xl"}>
         <Stack>
-          <Title>Want, the hardest one</Title>
+        <Group align="center">
+            <Group className={styles.link} onClick={handleClick}>
+              <Group className={styles["link-group"]}>
+                <Title>Want, the hardest one</Title>
+                <IconExternalLink size={40} />
+                <div className={styles["underline-hover"]}></div>
+              </Group>
+            </Group>
+          </Group>
           <Text size="xl" fw={600}></Text>
           <Text maw={600}>
-            Want started as an idea around 2021. Initially, it was supposed to
+            Want started as an idea around 2020. Initially, it was supposed to
             be a platform where people could simply post what they wanted,
             avoiding the hassle of searching through prices and descriptions for
             each item. Instead, they could just post exactly what they wanted
@@ -31,7 +51,7 @@ const page = () => {
             couldn&apos;t attend classes or afford the university completely).
             Anyway, this idea grew in my brain and spread like cancer until it
             consumed my entire head and I idealized it as the idea that would
-            lift me out of poverty (2022, haha). So,
+            lift me out of poverty (just kidding). So,
             I started development. At that time, I did it with PHP. It was
             garbage; it was terrible and didn&apos;t work at all, but at least I
             had an initial idea and started gaining experience with development.
@@ -72,12 +92,12 @@ const page = () => {
             Obviously, the development didn&apos;t die. We wanted to renew
             ourselves, learn to do more things, learn about technologies,
             frameworks, APIs, and programming. So, we decided to start over, but
-            with Mantine UI, Next 14 with the app router (app rura xd), and this
+            with Mantine UI, Next 14 with the app router (app rura), and this
             time Node but with GraphQL (GraphQL was the worst mistake I made for
             a project like Want, more on that later) and both in TS. So, we
             started again, adapting the new front-end to an old back-end. We
             thought it was just changing a .js to a .tsx and adjusting the REST
-            to GraphQL (xd). Obviously, it wasn&apos;t like that, and it was
+            to GraphQL. Obviously, it wasn&apos;t like that, and it was
             easier to redo the back-end from scratch with Apollo Server. When we
             had already done a lot of cool functionality, we realized the
             horrible problem of uploading a file to an API with GraphQL. You
@@ -106,7 +126,7 @@ const page = () => {
             from the past to avoid making the same mistakes. We switched from
             monorepo to microservices, from NodeJS with Express to Java with
             Spring, from MongoDB to MySQL, from GraphQL to RESTful, and kept the
-            front-end with Next 14 (app rura xd) with Mantine because for us,
+            front-end with Next 14 (app rura) with Mantine because for us,
             they are the kings in front-end development (Pure UI feeling).
           </Text>
           <Text maw={600}>
