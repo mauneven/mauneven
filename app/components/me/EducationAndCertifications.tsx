@@ -12,13 +12,13 @@ const EducationAndCertifications = () => {
         <Title size={25} maw={400}>
           Software Engineer, Bachelor&apos;s degree
         </Title>
-        <Paper miw={400} shadow="xl" p={20} withBorder>
+        <Paper maw={350} shadow="xl" p={20} withBorder>
           <Title ta={"center"}>UNAD</Title>
           <Text c={"dimmed"} ta={"center"}>
             National Open and Distance University of Colombia
           </Text>
           <Text c={"dimmed"} ta={"center"}>
-            - Currently studiying -
+            ( Currently studiying )
           </Text>
         </Paper>
       </Group>
@@ -26,7 +26,7 @@ const EducationAndCertifications = () => {
         <Title size={25} maw={400}>
           AWS Academy Graduate, AWS Academy Cloud Foundations
         </Title>
-        <Paper miw={400} shadow="xl" p={20} withBorder>
+        <Paper miw={350} shadow="xl" p={20} withBorder>
           <Group justify="center">
             <Image
               maw={200}

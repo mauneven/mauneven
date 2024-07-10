@@ -1,324 +1,244 @@
+"use client"
 import {
-  Title,
-  Text,
-  Stack,
-  Card,
   Group,
-  Button,
+  Stack,
+  Title,
+  Image,
+  Text,
   Badge,
-  Spoiler,
+  Button,
+  Flex,
+  Paper,
 } from "@mantine/core";
-import { IconBoxModel, IconBrandGithub, IconLink } from "@tabler/icons-react";
 import React from "react";
-import classes from "../../../public/css/me/Projects.module.css";
-import firstImpressionCss from "../../../public/css/me/FirstImpression.module.css";
+import classes from "../../../public/css/me/FirstImpression.module.css";
+import { IconBook, IconBrandGithub, IconLink } from "@tabler/icons-react";
+import { useRouter } from "next/navigation";
 
 const Projects = () => {
+
+  const router = useRouter();
+
   return (
-    <Stack
-      justify="center"
-      align="center"
-      mb={100}
-      style={{ minHeight: "100vh" }}
-    >
-      <Title
-        size="h1"
-        c={"gray"}
-        className={firstImpressionCss.titleDeveloper}
-      >
+    <Stack gap={40}>
+      <Title mb={20} className={classes.titleDeveloper}>
         Personal Projects
       </Title>
-      <Group maw={1000} justify="center" gap={50} mt={40}>
-        <Card
-          maw={400}
-          shadow="sm"
-          padding="lg"
-          radius="md"
-          withBorder
-          className={classes.projectCard}
-        >
-          <Group justify="center">
-            <img
-              alt="want"
-              className={classes.projectImage}
-              src={"/image/want-logo-c.png"}
-            />
-          </Group>
-          <Group justify="space-between" mt="md" mb="xs">
-            <Text fw={500} mt="xs" mb="xs">Want</Text>
-            <Badge color="gray">In Progress</Badge>
-          </Group>
-
-          <Group mt="md" mb="xl">
-            <Badge variant="light" color="gray">
-              NodeJS
-            </Badge>
-            <Badge variant="light" color="gray">
+      <Flex gap={30} align={"center"} direction={{ base: "column", md: "row" }}>
+        <Image maw={280} mah={60} src={"/image/want-logo.svg"}></Image>
+        <Group align="flex-start">
+          <Title ta={"start"}>Want</Title>
+          <Text>
+            A platform I founded and developed, aimed at revolutionizing online
+            commerce by creating a platform where users can post their needs in
+            a single post. Businesses and sellers can then offer the best deals,
+            effectively reversing the traditional online marketplace model.
+          </Text>
+          <Group>
+            <Badge size="md" color="gray" variant="light">
               Spring
             </Badge>
-            <Badge variant="light" color="gray">
+            <Badge size="md" color="gray" variant="light">
+              NodeJS
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
               NextJS
             </Badge>
-            <Badge variant="light" color="gray">
-              React Native
+            <Badge size="md" color="gray" variant="light">
+              React Native (EXPO)
             </Badge>
-            <Badge variant="light" color="gray">
-              TypeScript
+            <Badge size="md" color="gray" variant="light">
+              MongoDB
             </Badge>
-            <Badge variant="light" color="gray">
-              WebSockets
+            <Badge size="md" color="gray" variant="light">
+              ATLAS
             </Badge>
-            <Badge variant="light" color="gray">
-              Rest
+            <Badge size="md" color="gray" variant="light">
+              Docker
             </Badge>
-            <Badge variant="light" color="gray">
+            <Badge size="md" color="gray" variant="light">
+              Microservices
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
               AWS
             </Badge>
+            <Badge size="md" color="gray" variant="light">
+              Nginx
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              Rest
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              GraphQL (Apollo Server)
+            </Badge>
           </Group>
-          <Spoiler maxHeight={68} showLabel="Show more" hideLabel="Hide">
-            <Text size="sm" c="dimmed">
-              This project is the most advanced and ambitious endeavor to date.
-              Want stands as a groundbreaking platform that redifines online
-              commerce by enabling users to post their desired items and receive
-              offers from sellers, thereby transforming the traditional buying
-              and selling experience. Key features include: registration with
-              email code verification, login, password encryption, password
-              change functionality, real-time notifications through WebSockets,
-              post creation and editing capabilities, offer creation, viewing
-              offers on posted items, deletion of made offers and posted items,
-              reporting of posts and offers, reporting and banning of accounts.
-              All of these functions are facilitated through a highly
-              sophisticated geospatial system, which not only displays posts in
-              preferred categories but also allows users to set their desired
-              radius in kilometers within their country, state, or city using
-              latitude and longitude coordinates and IP-API geospatial location.
-              Furthermore, the platform supports multiple languages including
-              English, Spanish, and French.
-            </Text>
-          </Spoiler>
           <Button
             variant="light"
-            color="gray"
-            fullWidth
-            mt="md"
-            radius="md"
-            leftSection={<IconLink />}
+            color="yellow"
+            radius={"md"}
+            leftSection={<IconBrandGithub />}
             component="a"
-            href="https://want-landing.vercel.app/"
+            href="https://github.com/mauneven/want"
             target="_blank"
           >
-            Check landing
+            Repository
           </Button>
-        </Card>
-        <Card
-          maw={400}
-          shadow="sm"
-          padding="lg"
-          radius="md"
-          withBorder
-          className={classes.projectCard}
-        >
-          <Group justify="center">
-            <img
-              src={"/image/cassie.png"}
-              alt="cassie"
-              className={classes.projectImage}
-            />
-          </Group>
-          <Group justify="space-between" mt="xl" mb="xs">
-            <Text fw={500}>Cassie</Text>
-            <Badge color="gray">FINISHED</Badge>
-          </Group>
-
-          <Group mt="md" mb="xl">
-            <Badge variant="light" color="gray">
-              AI
+          <Button
+            variant="light"
+            color="yellow"
+            radius={"md"}
+            leftSection={<IconBook />}
+            onClick={() => router.push("/want")}
+          >
+            Read the story
+          </Button>
+        </Group>
+      </Flex>
+      <Flex gap={30} direction={{ base: "column", md: "row" }} align={"center"}>
+        <Paper maw={300} withBorder p={25} shadow="xl">
+          <Title ta={"center"} size={30}>
+            Code Analysis System for Software Intelligence and Enhancement
+          </Title>
+        </Paper>
+        <Group align="flex-start">
+          <Title ta={"start"}>CASSIE</Title>
+          <Text>
+            CASSIE, or Code Analysis System for Software Intelligence and
+            Enhancement, is a natural language model designed for code analysis.
+            It is based on the GPT-2 model with 124 million parameters, released
+            by OpenAI. CASSIE was created to assist in identifying problems in
+            code and providing explanations without the need to consult
+            extensive documentation. By leveraging the capabilities of GPT-2,
+            CASSIE can understand and process natural language inputs,
+            translating them into actionable insights for software development.
+          </Text>
+          <Group>
+            <Badge size="md" color="gray" variant="light">
+              Ai
             </Badge>
-            <Badge variant="light" color="gray">
-              LLM
-            </Badge>
-            <Badge variant="light" color="gray">
+            <Badge size="md" color="gray" variant="light">
               Python
             </Badge>
-            <Badge variant="light" color="gray">
-              TypeScript
+            <Badge size="md" color="gray" variant="light">
+              TensorFlow
             </Badge>
-            <Badge variant="light" color="gray">
-              Linux
+            <Badge size="md" color="gray" variant="light">
+              PyTorch
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              GPT-2
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              Hugging Face Transformers
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              NLTK
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              Pandas
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              NumPy
             </Badge>
           </Group>
-
-          <Text size="sm" c="dimmed">
-            CASSIE or Code Analysis System for Software Intelligence and
-            Enhancement it&apos;s a Generative Pre-Trained Transformer that uses
-            the community GPT-2 with more than 124 Millions of parameters
-          </Text>
-
           <Button
             variant="light"
-            color="gray"
-            fullWidth
-            mt="md"
-            radius="md"
+            color="yellow"
+            radius={"md"}
             leftSection={<IconBrandGithub />}
             component="a"
+            href="https://github.com/openai/gpt-2"
             target="_blank"
+          >
+            GPT-2 MODEL
+          </Button>
+          <Button
+            variant="light"
+            color="yellow"
+            radius={"md"}
+            leftSection={<IconBrandGithub />}
+            component="a"
             href="https://github.com/mauneven/cassie"
-          >
-            GitHub Repository
-          </Button>
-          <Button
-            variant="light"
-            color="gray"
-            fullWidth
-            mt="md"
-            radius="md"
-            leftSection={<IconBoxModel />}
-            component="a"
             target="_blank"
-            href="https://huggingface.co/openai-community/gpt2"
           >
-            LLM | Credits: OpenAI
-          </Button>
-        </Card>
-        <Card
-          maw={400}
-          shadow="sm"
-          padding="lg"
-          radius="md"
-          withBorder
-          className={classes.projectCard}
-        >
-          <Group justify="center">
-            <img
-              src={"/image/beacon.ico"}
-              className={classes.projectImage}
-              alt="spring"
-            />
-          </Group>
-          <Group justify="space-between" mt="md" mb="xs">
-            <Text fw={500} mt="xs" mb="xs">Beacon</Text>
-            <Badge color="gray">FINISHED</Badge>
-          </Group>
-          <Group mt="md" mb="xl">
-            <Badge variant="light" color="gray">
-              NextJS
-            </Badge>
-            <Badge variant="light" color="gray">
-              Mantine
-            </Badge>
-            <Badge variant="light" color="gray">
-              TypeScript
-            </Badge>
-            <Badge variant="light" color="gray">
-              Vercel
-            </Badge>
-          </Group>
-          <Spoiler maxHeight={152} showLabel="Show more" hideLabel="Hide">
-            <Text size="sm" c="dimmed">
-              The MiniMarket project is a fundamental Java project leveraging
-              the Spring framework and PostgreSQL database. It employs essential
-              mappings and attributes inherent to Spring&apos;s functionality.
-              This project serves as an excellent demonstration of core Java
-              principles, Spring&apos;s powerful features for dependency
-              injection, aspect-oriented programming, and data access through
-              its integration with PostgreSQL. By utilizing Spring&apos;s robust
-              capabilities, developers can efficiently manage dependencies,
-              handle database interactions seamlessly, and ensure code
-              modularity and scalability. Overall, the MiniMarket project
-              provides a solid foundation for understanding and implementing
-              Java-based web applications with Spring framework integration.
-            </Text>
-          </Spoiler>
-          <Button
-            variant="light"
-            color="gray"
-            fullWidth
-            mt="md"
-            radius="md"
-            leftSection={<IconBrandGithub />}
-            component="a"
-            target="_blank"
-            href="https://github.com/mauneven/minimarket"
-          >
-            GitHub Repository
-          </Button>
-        </Card>
-        <Card
-          maw={400}
-          shadow="sm"
-          padding="lg"
-          radius="md"
-          withBorder
-          className={classes.projectCard}
-        >
-          <Group justify="center">
-            <img
-              src={"/image/ato.png"}
-              className={classes.projectImage}
-              alt="ato"
-            />
-          </Group>
-          <Group justify="space-between" mt="md" mb="xs" >
-            <Text fw={500} mt="xs" mb="xs">ATO Web | 2019</Text>
-            <Badge color="gray">FINISHED</Badge>
-          </Group>
-          <Group mt="md" mb="xl">
-            <Badge variant="light" color="gray">
-              HTML
-            </Badge>
-            <Badge variant="light" color="gray">
-              CSS
-            </Badge>
-            <Badge variant="light" color="gray">
-              JavaScript
-            </Badge>
-            <Badge variant="light" color="gray">
-              BootStrap
-            </Badge>
-          </Group>
-
-          <Spoiler maxHeight={100} showLabel="Show more" hideLabel="Hide">
-            <Text size="sm" c="dimmed">
-              The ATO is the Tograynse Association of Orchidology, an
-              organization dedicated to the study, dissemination, preservation,
-              and in-situ management of orchids found in the Tolima department
-              of Colombia. Their work includes the publication of the ATO
-              magazine and the organization of events such as the Cattleya
-              Trianae Salon. Based in Ibagué, Colombia, the association operates
-              at an altitude of 1229 meters above sea level and is located at a
-              latitude of 4°26.3334 N and a longitude of 75°13.9332 W.
-            </Text>
-          </Spoiler>
-
-          <Button
-            variant="light"
-            color="gray"
-            fullWidth
-            mt="md"
-            radius="md"
-            leftSection={<IconBrandGithub />}
-            component="a"
-            target="_blank"
-            href="https://github.com/mauneven/Atorquideas"
-          >
-            GitHub Repository
+            Repository
           </Button>
           <Button
             variant="light"
-            color="gray"
-            fullWidth
-            mt="md"
-            radius="md"
+            color="yellow"
+            radius={"md"}
+            leftSection={<IconBook />}
+            onClick={() => router.push("/cassie")}
+          >
+            Read the story
+          </Button>
+        </Group>
+      </Flex>
+      <Flex gap={30} direction={{ base: "column", md: "row" }} align={"center"}>
+        <Image maw={240} mah={250} src={"/image/beacon.ico"}></Image>
+        <Group align="flex-start">
+          <Title ta={"start"}>Beacon</Title>
+          <Text>
+            Beacon is a web app designed as a reminder system for maintaining
+            healthy habits. It sends non-intrusive reminders to help users
+            practice good posture, drink water, stretch, relax their eyes, and
+            more. These reminders are particularly beneficial for individuals
+            who spend long hours on the computer, ensuring they maintain good
+            habits throughout their workday.
+          </Text>
+          <Group>
+            <Badge size="md" color="gray" variant="light">
+              NEXTJS
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              REACT
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              MANTINE
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              TYPESCRIPT
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              GIT
+            </Badge>
+            <Badge size="md" color="gray" variant="light">
+              VERCEL
+            </Badge>
+          </Group>
+          <Button
+            variant="light"
+            color="yellow"
+            radius={"md"}
             leftSection={<IconLink />}
             component="a"
+            href="https://beacon-reminder.vercel.app/"
             target="_blank"
-            href="https://mauneven.github.io/Atorquideas/"
           >
-            Check the page
+            Beacon Web Application
           </Button>
-        </Card>
-      </Group>
+          <Button
+            variant="light"
+            color="yellow"
+            radius={"md"}
+            leftSection={<IconBrandGithub />}
+            component="a"
+            href="https://github.com/mauneven/beacon"
+            target="_blank"
+          >
+            Repository
+          </Button>
+          <Button
+            variant="light"
+            color="yellow"
+            radius={"md"}
+            leftSection={<IconBook />}
+            onClick={() => router.push("/beacon")}
+          >
+            Read the story
+          </Button>
+        </Group>
+      </Flex>
     </Stack>
   );
 };

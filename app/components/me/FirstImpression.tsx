@@ -12,6 +12,9 @@ import {
 } from "@tabler/icons-react";
 
 const FirstImpression = () => {
+  const currentYear = new Date().getFullYear();
+  const experienceYears = currentYear - 2019;
+
   return (
     <Stack gap={40}>
       <Group>
@@ -36,7 +39,7 @@ const FirstImpression = () => {
             <Group justify="center" wrap="wrap-reverse" gap={20}>
               <Badge
                 size="lg"
-                color="yellow"
+                color="gray"
                 variant="light"
                 leftSection={<IconWorldPin size={20} />}
               >
@@ -44,7 +47,7 @@ const FirstImpression = () => {
               </Badge>
               <Badge
                 size="lg"
-                color="yellow"
+                color="gray"
                 variant="light"
                 leftSection={<IconBriefcase size={20} />}
               >
@@ -56,7 +59,7 @@ const FirstImpression = () => {
       </Group>
 
       <Text fw={600} maw={650} size="lg">
-        +4 years of experience. Full-Stack Software Developer creating
+        +{experienceYears} years of experience. Full-Stack Software Developer creating
         high-quality services used by{" "}
         <Text fw={700} span c="yellow" inherit>
           millions of users
@@ -67,7 +70,7 @@ const FirstImpression = () => {
       <Group gap={20}>
         <Button
           variant="light"
-          color="gray"
+          color="yellow"
           radius={"md"}
           leftSection={<IconBrandLinkedin />}
           component="a"
@@ -78,7 +81,7 @@ const FirstImpression = () => {
         </Button>
         <Button
           variant="light"
-          color="gray"
+          color="yellow"
           radius={"md"}
           leftSection={<IconBrandGithub />}
           component="a"
@@ -89,7 +92,7 @@ const FirstImpression = () => {
         </Button>
         <Button
           variant="light"
-          color="gray"
+          color="yellow"
           radius={"md"}
           leftSection={<IconMail />}
           component="a"

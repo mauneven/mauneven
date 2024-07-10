@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <title>Mauneven&apos;s Blog</title>
+      <title>Mauneven</title>
         <ColorSchemeScript />
       </head>
       <body>

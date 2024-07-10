@@ -19,7 +19,7 @@ const Experience = () => {
             FullStack Software Developer
           </Title>
           <Text fw={700} mt={5}>
-            BeBolder - Dec, 2022
+            BeBolder - Dec, 2022 (Current Job)
           </Text>
           <Text fw={600} mt={5}>
             I collaborate and develop with professional agile teams for the
@@ -85,7 +85,7 @@ const Experience = () => {
             Lead Developer and Director
           </Title>
           <Text fw={700} mt={5}>
-            Want - Jan, 2020
+            Want - Jan, 2020 to Dec, 2022
           </Text>
           <Text fw={600} mt={5}>
             I founded and developed a startup with the intention of creating an
